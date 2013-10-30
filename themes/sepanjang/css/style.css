@@ -1,0 +1,94 @@
+/*!
+ * style custom
+ *
+ * Designed and built with all the love in the world by @bangucen.
+ */
+
+* { margin: 0; }
+html { overflow-y: none; }
+body { background: url(../img/stump5x.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; /*padding-top: 50px;*/ color: #222; padding: 0; }
+html, body { height:100%; }
+
+.halaman_depan { overflow:auto }
+.halaman_depan body { height: 100%; max-width: inherit; }
+.halaman_depan form { margin-bottom:0 }
+.headerimg { background-position: center center fixed; background-repeat: no-repeat; width:100%; height:100%; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; position:absolute; padding: 0; }
+
+
+
+/* Header */
+.navbar { min-height: 40px; }
+.navbar-nav > li > .dropdown-menu { margin-top: -1px; }
+.navbar-nav > li > a { padding-top: 10px; padding-bottom: 10px; }
+.navbar-inverse { height: 40px; background-color: #000; text-transform: uppercase; font-size: 12px; }
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus { color: #ffffff; background-color: #000; }
+.dropdown-menu { text-transform: none;}
+
+
+
+/* Form in Home */
+.main-content { min-height: 100%; height: 100%; margin: 0 auto -50px; }
+.form-box { position: absolute; top: 15%; width: 300px; padding-left: 23px; padding-right: 23px; padding-bottom: 23px; border-color: #fbfbfb; background: #fbfbfb; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -moz-box-shadow: 0 0 8px #636363; -webkit-box-shadow: 0 087px#636363; box-shadow: 0 0 8px #636363; }
+.form-form legend { left: 19px; top: 20px; color: #088ad5; font-size: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: 700; line-height: 1.1; text-transform: uppercase; padding-bottom: 15px; }
+.form-form h3 { color: #666; font-size: 13px; font-weight: 500; }
+.form-form h3 span { color: #088ad5; font-weight: 700; }
+.form-step2 { margin-top: 16px; }
+.form-input-provider, .form-input-nominal { margin-top: 20px; }
+.form-total-nominal { font-size: 25px }
+.form-total-label{ line-height: 30px; margin-top: -10px; margin-bottom: -5px; }
+.form-bank-detail { color: #494949; font-weight: 700; margin-bottom: 25px; }
+.form-bank-detail span { font-weight: normal; }
+.form-keterangan { margin-left: -20px; margin-bottom: 20px; font-size:13px; }
+.form-keterangan-title { font-size:13px; }
+.form-keterangan li { margin-bottom: 4px; }
+.form-batal-order { display: inline-block; margin-top: 17px; margin-bottom: 0px; font-size: 12px;}
+.form-batal-order a { color: #E40000 }
+
+
+
+/* Page Content */
+.row { margin-right: 0px; min-height: 100%; height: 100%;  }
+.sidebar-menu { position:fixed; background: #333; height: 100%; top:5px; left: 0px; font: small/normal Arial,Helvetica,Sans-Serif; text-align: center;}
+.page-logo { border: 1px white solid; margin: 40px 10px 30px 10px; height: 70px; }
+.page-menu { margin: 0px; }
+.list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus { background-color: #333; border-color: #333; color: #fff}
+.list-group-item:first-child { border-top-right-radius: 0px; border-top-left-radius: 0px; }
+.list-group-item { padding: 5px 15px; margin-bottom: 10px; background-color: #333; border: 1px solid #333; }
+a.list-group-item { color: #757575; padding: 0px; }
+a.list-group-item:hover { background: none; color: #fff }
+.col-lg-1 { width: 9.0%; padding-right: 10px; padding-left: 10px;}
+.list-group h2 { margin-bottom: 0px; }
+.content-page { position:fixed; background: #fff; height: 100%; top:5px; margin-left: 9px; }
+.content-base { margin: 40px 20px; font-family: Arial,Helvetica,sans-serif;}
+h3.content-tittle { line-height: 28px; font-size: 28px; color: #000; margin-top: 0px; }
+.list-submenu { list-style: none; padding: 0px; margin-bottom: 40px  }
+.list-submenu > li { display: inline-block; float: none; padding: 15px 30px 10px 0; text-transform: uppercase; font-weight: bold; font-size: small;}
+.list-submenu > li > a { text-decoration: none; color: #777 }
+.list-submenu > li > a:hover { text-decoration: underline; }
+.list-submenu > li > a.active { color: #000 }
+.content-core {  }
+.back-to-home > a, .back-to-home  > a:hover { color: #777; text-decoration: none; }
+
+
+
+
+/* Footer */
+footer, .push { height: 50px;}
+.button-footer { padding-right: 0px; }
+.back-footer, .next-footer, .info-footer, .copyright-footer { background: transparent url(../img/assetFooter.png) no-repeat; overflow: hidden; width: 30px; height:30px;float: right; margin-right: 13px; cursor: pointer;}
+.back-footer { background-position: 0 -61px; }
+.next-footer { background-position: 0 -1px; }
+.info-footer { background-position: -30px -1px; margin-left: 7px; margin-right: 0px; }
+.copyright-footer { background-position: -59px -1px; margin-right: 23px; }
+
+
+
+/* Haleloya */
+.tac { text-align:center; }
+.none { display: none; }
+.geser-kiri-40 { margin-right: 40px; }
+.hr-border { border-top: 1px solid #eaeaea; margin-top:20px; margin-bottom: 25px; }
+.npl { padding-left: 0px; }
+.mtb-20 { margin-top: 20px; margin-bottom: 20px; } 
+.tebal { font-weight: bold; }
+.huruf-besar { text-transform: uppercase; }
