@@ -6,4 +6,16 @@ class FrontController extends Controller
 	{
 		$this->render('index');
 	}
+
+	public function actionComponent()
+	{
+		$this->layout = '//layouts/blankLayout';
+		$this->render('component');
+	}
+
+	public function actionSlideImage()
+	{
+		$this->layout = '//layouts/blankLayout';
+		$this->render('slide');
+	}
 }

@@ -1,22 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "konfirmasi".
+ * This is the model class for table "options".
  *
- * The followings are the available columns in table 'konfirmasi':
- * @property integer $ord_id
- * @property string $knf_date
- * @property string $knf_buyer
- * @property integer $knf_nominal
+ * The followings are the available columns in table 'options':
+ * @property integer $sys_id
+ * @property string $sys_name
+ * @property string $sys_value
+ * @property integer $sys_status
  */
-class Konfirmasi extends CActiveRecord
+class Options extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'konfirmasi';
+		return 'options';
 	}
 
 	/**
@@ -27,12 +27,12 @@ class Konfirmasi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ord_id, knf_date, knf_buyer, knf_nominal', 'required'),
-			array('ord_id, knf_nominal', 'numerical', 'integerOnly'=>true),
-			array('knf_buyer', 'length', 'max'=>100),
+			array('sys_name, sys_value', 'required'),
+			array('sys_status', 'numerical', 'integerOnly'=>true),
+			array('sys_name', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ord_id, knf_date, knf_buyer, knf_nominal', 'safe', 'on'=>'search'),
+			array('sys_id, sys_name, sys_value, sys_status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,10 +53,10 @@ class Konfirmasi extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ord_id' => 'Ord',
-			'knf_date' => 'Knf Date',
-			'knf_buyer' => 'Knf Buyer',
-			'knf_nominal' => 'Knf Nominal',
+			'sys_id' => 'Sys',
+			'sys_name' => 'Sys Name',
+			'sys_value' => 'Sys Value',
+			'sys_status' => 'Sys Status',
 		);
 	}
 
@@ -78,10 +78,10 @@ class Konfirmasi extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('ord_id',$this->ord_id);
-		$criteria->compare('knf_date',$this->knf_date,true);
-		$criteria->compare('knf_buyer',$this->knf_buyer,true);
-		$criteria->compare('knf_nominal',$this->knf_nominal);
+		$criteria->compare('sys_id',$this->sys_id);
+		$criteria->compare('sys_name',$this->sys_name,true);
+		$criteria->compare('sys_value',$this->sys_value,true);
+		$criteria->compare('sys_status',$this->sys_status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -92,10 +92,31 @@ class Konfirmasi extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Konfirmasi the static model class
+	 * @return Options the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
 	}
+
+
+	public function getOptions($name)
+	{
+		$getData = Options::model()->find('sys_name = :sysName', array(':sysName' => $name));
+
+		if(isset($getData))
+		{
+			if($getData->sys_status == 1 && $getData->sys_value != "" && $getData->sys_value != null)
+			{
+				// aktif dan value tidak kosong
+				return $getData->sys_value;	
+			} else {
+				// nonaktif dan value kosong
+				return null;
+			}
+		} else {
+			return null;
+		}
+	}
+
 }

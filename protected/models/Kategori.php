@@ -1,22 +1,21 @@
 <?php
 
 /**
- * This is the model class for table "konfirmasi".
+ * This is the model class for table "kategori".
  *
- * The followings are the available columns in table 'konfirmasi':
- * @property integer $ord_id
- * @property string $knf_date
- * @property string $knf_buyer
- * @property integer $knf_nominal
+ * The followings are the available columns in table 'kategori':
+ * @property integer $ktg_id
+ * @property string $ktg_nama
+ * @property integer $ktg_status
  */
-class Konfirmasi extends CActiveRecord
+class Kategori extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'konfirmasi';
+		return 'kategori';
 	}
 
 	/**
@@ -27,12 +26,12 @@ class Konfirmasi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ord_id, knf_date, knf_buyer, knf_nominal', 'required'),
-			array('ord_id, knf_nominal', 'numerical', 'integerOnly'=>true),
-			array('knf_buyer', 'length', 'max'=>100),
+			array('ktg_nama', 'required'),
+			array('ktg_status', 'numerical', 'integerOnly'=>true),
+			array('ktg_nama', 'length', 'max'=>30),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ord_id, knf_date, knf_buyer, knf_nominal', 'safe', 'on'=>'search'),
+			array('ktg_id, ktg_nama, ktg_status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,10 +52,9 @@ class Konfirmasi extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'ord_id' => 'Ord',
-			'knf_date' => 'Knf Date',
-			'knf_buyer' => 'Knf Buyer',
-			'knf_nominal' => 'Knf Nominal',
+			'ktg_id' => 'Ktg',
+			'ktg_nama' => 'Ktg Nama',
+			'ktg_status' => 'Ktg Status',
 		);
 	}
 
@@ -78,10 +76,9 @@ class Konfirmasi extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('ord_id',$this->ord_id);
-		$criteria->compare('knf_date',$this->knf_date,true);
-		$criteria->compare('knf_buyer',$this->knf_buyer,true);
-		$criteria->compare('knf_nominal',$this->knf_nominal);
+		$criteria->compare('ktg_id',$this->ktg_id);
+		$criteria->compare('ktg_nama',$this->ktg_nama,true);
+		$criteria->compare('ktg_status',$this->ktg_status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -92,7 +89,7 @@ class Konfirmasi extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Konfirmasi the static model class
+	 * @return Kategori the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
