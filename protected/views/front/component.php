@@ -90,21 +90,76 @@ $(document).ready(function(){
     });
 
 
-    // contoh proses demo 
-    $('#tombolProses').click(function(){
-       $('#tombolProses').button('loading');
-       var startTimeProses = new Date().getTime();
-       var setTimerProses = setInterval(function(){
-        $('#step-1').fadeOut(500, function(){
-            $('#step-2').fadeIn(600).attr('style', 'display:block');
-        });
-        if(new Date().getTime() - startTimeProses > 2000){
-            clearInterval(setTimerProses);
-            return;
+    // proses tahap 1 (order)
+    var step1;
+    $("#step1-form").submit(function(event){
+        
+        if(step1){
+            step1.abort();
         }
-    }, 3000);
-   });
+        
+        var $form = $(this);
+        var $inputs = $form.find("input, select");
+        var serializedData = $form.serialize();
+        var msgerror = 'Maaf, Terjadi kesalahan pada saat proses transaksi. Silahkan ulangi lagi';
 
+        $inputs.prop("disabled", true);
+        $('#tombolProses').button('loading');
+
+        step1 = $.ajax({
+            url: window.location.pathname+"/node/step1",
+            type: "post",
+            data: serializedData
+        });
+
+        step1.done(function (response, textStatus, jqXHR){
+            if(response == "error"){
+                $('#errormsg').text(msgerror)
+                $('#steperror').modal({
+                    show : true,
+                });
+            }else{
+                setTimeout(function(){
+
+                    var splitStep1 = response.split("_");
+                    $('#tombolTerimaKasih').attr('disabled','disabled');
+                    $('#counter').val(splitStep1[0]);
+                    $('#bantuHapus').attr('href', window.location.pathname+"node/hapus/order/"+splitStep1[0]+"/hash/"+splitStep1[2]+"/token/"+splitStep1[7]);
+                    $('#tagihanStep2').text(splitStep1[2]);
+                    $('#operatorStep2, #operatorStep3').text(splitStep1[3]+" "+splitStep1[1]);
+                    $('#nomorStep2, #nomorStep3').text(splitStep1[4]);
+                    $('#voucherStep2, #voucherStep3').text(splitStep1[5]);
+                    $('#statusOrder').text(splitStep1[8]);
+                    $('#bank_'+splitStep1[6]).attr('style', 'display:block');
+
+                    $('#step-1').fadeOut(500, function(){
+                        $('#step-2').fadeIn(600).attr('style', 'display:block');
+                    });
+
+                }, 3000);
+
+                setTimeout(function(){
+                    $('#tombolTerimaKasih').removeAttr('disabled');
+                }, 20000);
+            }
+        });
+
+        step1.fail(function (jqXHR, textStatus, errorThrown){
+            $('#errormsg').text(msgerror)
+            $('#steperror').modal({
+                show : true,
+            });
+        });
+
+        step1.always(function () {
+            //$inputs.prop("disabled", false);
+        });
+
+        event.preventDefault();
+    }); 
+
+
+    // proses tahap 2 (menunggu pembayaran)
     $('#tombolTerimaKasih').click(function(){                     
        $('#tombolTerimaKasih').button('loading');
        var startTimeCek = new Date().getTime();
@@ -120,6 +175,31 @@ $(document).ready(function(){
         }
 
     }, 2000);
+   });
+
+
+   // proses tahap 3 (periksa status pembayaran)
+   $('#tombolCekStatus').click(function(){                     
+        $('#tombolCekStatus').button('loading');
+        $('#statusOrder').text('...');       
+        $.ajax({
+            url: window.location.pathname+"/node/step3",
+            type: "post",
+            data: { count: $('#counter').val() },
+            beforeSend:function(){
+                $('#statusOrder').html('<div class="loading"><img src="'+window.location.pathname+'/themes/sepanjang/img/load.gif" alt="Loading..." />');
+            },
+            success:function(data){
+                setTimeout(function(){
+                    $('#statusOrder').empty();
+                    $('#statusOrder').text(data);
+                    $('#tombolCekStatus').button('reset');
+                }, 2000);
+            },
+            error:function(){
+                $('#statusOrder').text('error');
+            }
+        });
    });
 
 

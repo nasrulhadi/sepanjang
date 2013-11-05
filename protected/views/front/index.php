@@ -47,7 +47,13 @@
 <section class="main-content">
 	<div class="container clearfix">
 		<div class="form-box">
-			<form action="#" method="post" class="form-form" role="form">
+			<?php 
+			$form=$this->beginWidget('CActiveForm', array(
+				'id'=>'step1-form',
+				'enableAjaxValidation'=>false,
+				'htmlOptions'=>array('class'=>'form-form', 'role' => 'form')
+			)); 
+			?>
 				<fieldset id="step-1">
 					<legend class="form-color-random">Pesan Sekarang!</legend>
 					<h3><span class="form-color-random">01.</span> Pilih Voucher</h3>
@@ -105,29 +111,41 @@
 					</label>
 					<div class="clearfix"></div>
 					<div class="pull-right">
-						<button type="button" id="tombolProses" data-loading-text="Tunggu..." class="btn btn-success" disabled>Proses</button>
+						<?php 
+						Yii::app()->session['keySalt'] = Options::model()->getSession();
+						echo CHtml::hiddenField('keystore', Yii::app()->session['keySalt']); 
+						?>
+						<input type="submit" id="tombolProses" data-loading-text="Tunggu..." class="btn btn-success" value="Proses" disabled >
 					</div>
 				</fieldset>
+			<?php 
+			$this->endWidget();
 
+			$form=$this->beginWidget('CActiveForm', array(
+				'id'=>'step2-form',
+				'enableAjaxValidation'=>false,
+				'htmlOptions'=>array('class'=>'form-form', 'role' => 'form')
+			)); 
+			?>
 				<fieldset id="step-2" style="display:none">
 					<legend class="form-color-random">Selangkah Lagi</legend>
-					<h3 class="form-step2"><span class="form-color-random">Voucher</span> <div class="pull-right"><strong>Pulsa Elektrik</strong></div></h3>
-					<h3 class="form-step2"><span class="form-color-random">Nominal</span> <div class="pull-right"><strong>M3 10.000</strong></div></h3>
-					<h3 class="form-step2"><span class="form-color-random">Nomor</span> <div class="pull-right"><strong>087852773907</strong></div></h3>
+					<h3 class="form-step2"><span class="form-color-random">Voucher</span> <div class="pull-right"><strong><div id="voucherStep2"></div></strong></div></h3>
+					<h3 class="form-step2"><span class="form-color-random">Nominal</span> <div class="pull-right"><strong><div id="operatorStep2"></div></strong></div></h3>
+					<h3 class="form-step2"><span class="form-color-random">Nomor</span> <div class="pull-right"><strong><div id="nomorStep2"></div></strong></div></h3>
 					<hr class="hr-border"></hr>
 
-					<h3 class="form-total-label"><span class="form-color-random">Total Tagihan</span> <div class="pull-right"><strong class="form-total-nominal">10.702</strong></div></h3>
+					<h3 class="form-total-label"><span class="form-color-random">Total Tagihan</span> <div class="pull-right"><strong class="form-total-nominal"><div id="tagihanStep2"></div></strong></div></h3>
 					<hr class="hr-border"></hr>
-					<div class="form-bank-detail">
-						<?php
-						$bank_name = json_decode(Options::GetOptions("bank_name"), true);
-						foreach ($bank_name as $result) {
-							if($result['value'] == "BCA"){
-								echo $result['value'].'<span>/</span> '.$result['nama'].' <span>/</span>'.$result['rekening'];
-							}
-						}
-						?>
-					</div>
+					<?php
+					$bank_name = json_decode(Options::GetOptions("bank_name"), true);
+					foreach ($bank_name as $result) {
+						echo '<div id="bank_'.strtolower($result['initial']).'" class="form-bank-detail-update" style="display:none">';
+						echo '<div class="'.strtolower($result['initial']).' icons-bank" title="'.$result['value'].'"></div>';
+						echo '<div><p class="tebal"><span class="profil">a/n</span> '.ucwords(strtolower($result['nama'])).'<br><span class="profil">rekening</span> '.$result['rekening'].'</p></div>';
+						echo '</div>';
+					}
+					?>
+					<hr class="hr-border"></hr>
 					<p class="form-color-random form-keterangan-title"><strong>Keterangan</strong></p>
 					<ol class="form-keterangan">
 						<?php
@@ -149,12 +167,12 @@
 
 				<fieldset id="step-3" style="display:none">
 					<legend class="form-color-random">Periksa Status Order</legend>
-					<h3 class="form-step2"><span class="form-color-random">Voucher</span> <div class="pull-right"><strong>Pulsa Elektrik</strong></div></h3>
-					<h3 class="form-step2"><span class="form-color-random">Nominal</span> <div class="pull-right"><strong>M3 10.000</strong></div></h3>
-					<h3 class="form-step2"><span class="form-color-random">Nomor</span> <div class="pull-right"><strong>087852773907</strong></div></h3>
+					<h3 class="form-step2"><span class="form-color-random">Voucher</span> <div class="pull-right"><strong><div id="voucherStep3"></div></strong></div></h3>
+					<h3 class="form-step2"><span class="form-color-random">Nominal</span> <div class="pull-right"><strong><div id="operatorStep3"></div></strong></div></h3>
+					<h3 class="form-step2"><span class="form-color-random">Nomor</span> <div class="pull-right"><strong><div id="nomorStep3"></div></strong></div></h3>
 					<hr class="hr-border"></hr>
 
-					<h3 class="form-total-label"><span class="form-color-random">Status</span> <div class="pull-right"><strong class="form-total-nominal text-info">Proses</strong></div></h3>
+					<h3 class="form-total-label"><span class="form-color-random">Status</span> <div class="pull-right"><strong id="statusOrder" class="form-total-nominal text-info"></strong></div></h3>
 					<hr class="hr-border"></hr>
 
 					<p class="form-color-random form-keterangan-title"><strong>Keterangan</strong></p>
@@ -168,12 +186,13 @@
 					</ol>
 
 					<div class="clearfix"></div>
-					<a href="./" class="btn btn-default">Halaman Utama</a>
+					<?php echo CHtml::hiddenField('counter', '0'); ?>
+					<a href="./" class="btn btn-default">Order lagi?</a>
 					<div class="pull-right">
-						<button type="button" id="tombolCekStatus" data-loading-text="Tunggu..." class="btn btn-success">Cek Status</button>
+						<button type="button" id="tombolCekStatus" data-loading-text="Tunggu..." class="btn btn-success">Periksa Status</button>
 					</div>
 				</fieldset>
-			</form>
+			<?php $this->endWidget(); ?>
 		</div>
 
 		<div id="batalkanpesanan" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
@@ -182,7 +201,16 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" data-dismiss="modal" class="btn btn-default">Batal Menghapus</button>
-				<button type="button" data-dismiss="modal" class="btn btn-danger">Hapus Sekarang</button>
+				<a href="<?php echo Yii::app()->baseUrl; ?>/node/order/" id="bantuHapus" class="btn btn-danger">Hapus Sekarang</a>
+			</div>
+		</div>
+
+		<div id="steperror" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+			<div class="modal-body">
+				<p id="errormsg"></p>
+			</div>
+			<div class="modal-footer">
+				<a href="<?php echo Yii::app()->baseUrl; ?>" class="btn btn-danger">Halaman Depan</a>
 			</div>
 		</div>
 
