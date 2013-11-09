@@ -64,7 +64,8 @@ class NodeController extends Controller
 			$order->ord_status = "waiting";
 
 			if($order->save()){
-				/* keterangan response :
+				/* 
+				keterangan response :
 				1. id order
 				2. nominal voucher
 				3. nominal setelah generate
@@ -86,10 +87,10 @@ class NodeController extends Controller
 					 md5(sha1($_POST['keystore']))."_".
 					 "Waiting";
 			} else {
-				echo "error";
+				echo "error1";
 			}
 		} else {
-			echo "error";
+			echo "error2";
 		}
 	}
 

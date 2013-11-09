@@ -7,47 +7,21 @@ var slideshowSpeed = 600000;
 
 // Variable to store the images we need to set as background
 // which also includes some text and url's.
-var photos = [ {
-		"author" : "UcenBang",
-		"image" : "stump.jpg",
-		"title" : "Duri Memecah Kharisma",
-		"imageFrom" : "Sepanjang"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump1.jpg",
-		"title" : "Belahan Pohon Asmara",
-		"imageFrom" : "Hutan Caruban?"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump2.jpg",
-		"title" : "Bunga di Sepanjang",
-		"imageFrom" : "Sepanjang"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump3.jpg",
-		"title" : "Sunday Morning in Pabean",
-		"imageFrom" : "Pabean Megapolitan"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump4.jpg",
-		"title" : "Bapak lagi Mancing",
-		"imageFrom" : "Danau Juanda"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump5.jpg",
-		"title" : "Tempat Nembak Janda",
-		"imageFrom" : "Danau Kenjhi"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump6.jpg",
-		"title" : "Kapal Bapak",
-		"imageFrom" : "Pantai Ria Kenjhi"
-	}, {
-		"author" : "UcenBang",
-		"image" : "stump7.jpg",
-		"title" : "Cakrawala Membahana",
-		"imageFrom" : "Langit Gusthi Allah SWT"
+var photos = [ 
+	<?php
+	$criteria = new CDbCriteria;
+	$criteria->order = 'rand()';
+	$criteria->limit = '5';
+	$getBg = Background::model()->findAll($criteria);
+	foreach ($getBg as $result) {
+		echo '{
+		"author" : "'.$result->bg_author.'",
+		"image" : "'.$result->bg_image.'",
+		"title" : "'.$result->bg_title.'",
+		"imageFrom" : "'.$result->bg_from.'"
+		},';
 	}
+	?>
 ];
 
 

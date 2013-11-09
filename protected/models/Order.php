@@ -34,7 +34,7 @@ class Order extends CActiveRecord
 			array('opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank', 'required'),
 			array('dnm_nominal, ord_bayar', 'numerical', 'integerOnly'=>true),
 			array('opt_code', 'length', 'max'=>10),
-			array('ord_dest', 'length', 'max'=>15),
+			array('ord_dest', 'length', 'max'=>19),
 			array('ord_bank', 'length', 'max'=>20),
 			array('ord_status', 'length', 'max'=>7),
 			// The following rule is used by search().

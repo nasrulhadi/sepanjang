@@ -99,7 +99,7 @@
 					<hr class="hr-border"></hr>
 
 					<h3><span class="form-color-random">02.</span> Masukan Nomor</h3>
-					<input type="text" name="nomor" id="nomor" class="form-control form-input-nomor" placeholder="08123456xxxx" maxlength="30" disabled>
+					<input type="text" name="nomor" id="nomor" class="form-control form-input-nomor" placeholder="08123456xxxx" maxlength="19" disabled>
 					<hr class="hr-border"></hr>
 
 					<h3><span class="form-color-random">03.</span> <span class="form-color-random form-input-terakhir"></span> Bank Tujuan Transfer</h3>

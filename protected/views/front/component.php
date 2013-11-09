@@ -83,11 +83,11 @@ $(document).ready(function(){
 
 
     // dropdown navbar
-    $('.navbar .dropdown').hover(function() {
+    /* $('.navbar .dropdown').click(function() {
         $(this).find('.dropdown-menu').first().stop(true, true).delay(150).slideDown();
     }, function() {
         $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideUp()
-    });
+    }); */
 
 
     // proses tahap 1 (order)
@@ -113,7 +113,7 @@ $(document).ready(function(){
         });
 
         step1.done(function (response, textStatus, jqXHR){
-            if(response == "error"){
+            if(response == "error1" || response == "error2" ){
                 $('#errormsg').text(msgerror)
                 $('#steperror').modal({
                     show : true,
