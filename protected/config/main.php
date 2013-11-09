@@ -20,8 +20,9 @@ return array(
 	),
 
 	'modules'=>array(
+		'halaman',
 		// uncomment the following to enable the Gii tool
-		'gii'=>array(
+		'halaman','gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'sepanjang',
 			// If removed, Gii defaults to localhost only. Edit carefully to taste.

@@ -9,10 +9,10 @@
 	</div>
 	<div class="collapse navbar-collapse">
 		<ul class="nav navbar-nav">
-			<li class="active"><a href="<?php $baseUrl = Yii::app()->baseUrl; ?>"><?php echo json_decode(Options::GetOptions("web_name"))->{"value"}; ?></a></li>
-			<li><a href="#status">Status Order</a></li>
-			<li><a href="#konfirmasi">Konfirmasi Pembayaran</a></li>
-			<li><a href="#harga">Total Donasi</a></li>
+			<li class="active"><a href="<?php echo Yii::app()->baseUrl."/go/home"; ?>"><?php echo json_decode(Options::GetOptions("web_name"))->{"value"}; ?></a></li>
+			<li><?php echo CHtml::link('Status Order', array('/halaman/order')); ?></li>
+			<li><?php echo CHtml::link('Konfirmasi Pembayaran', array('/halaman/konfirmasi')); ?></li>
+			<li><?php echo CHtml::link('Total Donasi', array('/halaman/donasi')); ?></li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
 			<li class="dropdown">
@@ -30,13 +30,13 @@
 					<li class="divider"></li>
 
 					<li class="dropdown-header">Panduan Pembelian</li>
-					<li><a href="#halamantutor"><span class="glyphicon glyphicon-check"></span> &nbsp; Tata Cara Pembelian</a></li>
-					<li><a href="#halamanfaq"><span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan yg Sering Diajukan</a></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-check"></span> &nbsp; Tata Cara Pembelian', array('/halaman/panduan')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan yg Sering Diajukan', array('/halaman/faq')); ?></li>
 					<li class="divider"></li>
 
 					<li class="dropdown-header">Informasi Sistem</li>
-					<li><a href="server.html"><span class="glyphicon glyphicon-hdd"></span> &nbsp; Status Server</a></li>
-					<li><a href="#totaltransaksi"><span class="glyphicon glyphicon-saved"></span> &nbsp; Total Transaksi</a></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-hdd"></span> &nbsp; Status Server', array('/halaman/sistem')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-saved"></span> &nbsp; Total Transaksi', array('/halaman/transaksi')); ?></li>
 				</ul>
 			</li>
 		</ul>
@@ -111,8 +111,10 @@
 					</label>
 					<div class="clearfix"></div>
 					<div class="pull-right">
-						<?php 
-						Yii::app()->session['keySalt'] = Options::model()->getSession();
+						<?php
+						if(Yii::app()->session['keySalt'] == ""){
+							Yii::app()->session['keySalt'] = Options::model()->getSession();
+						} 
 						echo CHtml::hiddenField('keystore', Yii::app()->session['keySalt']); 
 						?>
 						<input type="submit" id="tombolProses" data-loading-text="Tunggu..." class="btn btn-success" value="Proses" disabled >
@@ -187,7 +189,7 @@
 
 					<div class="clearfix"></div>
 					<?php echo CHtml::hiddenField('counter', '0'); ?>
-					<a href="./" class="btn btn-default">Order lagi?</a>
+					<?php echo CHtml::link('Order lagi?', array('/go/home'), array('class' => 'btn btn-default')); ?>
 					<div class="pull-right">
 						<button type="button" id="tombolCekStatus" data-loading-text="Tunggu..." class="btn btn-success">Periksa Status</button>
 					</div>
@@ -201,7 +203,7 @@
 			</div>
 			<div class="modal-footer">
 				<button type="button" data-dismiss="modal" class="btn btn-default">Batal Menghapus</button>
-				<a href="<?php echo Yii::app()->baseUrl; ?>/node/order/" id="bantuHapus" class="btn btn-danger">Hapus Sekarang</a>
+				<a href="<?php echo Yii::app()->baseUrl; ?>/go/home/" id="bantuHapus" class="btn btn-danger">Hapus Sekarang</a>
 			</div>
 		</div>
 
@@ -210,7 +212,7 @@
 				<p id="errormsg"></p>
 			</div>
 			<div class="modal-footer">
-				<a href="<?php echo Yii::app()->baseUrl; ?>" class="btn btn-danger">Halaman Depan</a>
+				<a href="<?php echo Yii::app()->baseUrl."/go/home"; ?>" class="btn btn-danger">Halaman Depan</a>
 			</div>
 		</div>
 

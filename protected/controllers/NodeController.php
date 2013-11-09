@@ -4,7 +4,7 @@ class NodeController extends Controller
 {
 	public function actionIndex()
 	{
-		$this->redirect(array('/'));
+		$this->redirect(array('/go/home'));
 	}
 
 	public function actionGetprovider()
@@ -112,6 +112,6 @@ class NodeController extends Controller
 		if($token == md5(sha1($session))){
 			Order::model()->findByAttributes(array("ord_id" => $order, "ord_bayar" => $hash))->delete();
 		}
-		$this->redirect(array('/'));
+		$this->redirect(array('/go/home'));
 	}
 }

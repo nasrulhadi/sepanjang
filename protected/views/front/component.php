@@ -1,3 +1,5 @@
+<?php Header("Content-Type: application/x-javascript; charset=UTF-8"); ?>
+
 $(document).ready(function(){
     
     // select voucher
@@ -206,6 +208,32 @@ $(document).ready(function(){
     // modal hapus order
     $('#hapusOrder').modal({
         show : false,
+    });
+
+
+    // filter input cuma angka
+    $('#cariNo').keyup(function () {     
+        this.value = this.value.replace(/[^0-9\.]/g,'');
+        if(this.value.length >= 8){
+            $('#tombolStatusOrder').removeAttr('disabled');
+        }else{
+            $('#tombolStatusOrder').attr('disabled','disabled');
+        }
+    });
+
+
+    // contoh proses buat demo 
+    $('#tombolStatusOrder').click(function(){
+         $('#tombolStatusOrder').button('loading');
+         var startTimeProses = new Date().getTime();
+         var setTimerProses = setInterval(function(){
+            $('#tableResult').fadeIn(400).removeAttr('style');
+            $('#tombolStatusOrder').button('reset');
+            if(new Date().getTime() - startTimeProses > 1000){
+                clearInterval(setTimerProses);
+                return;
+            }
+        }, 2000);
     });
 
 });

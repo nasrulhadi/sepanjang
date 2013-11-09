@@ -31,9 +31,32 @@
         <div id="headerimg1" class="headerimg"></div>
         <div id="headerimg2" class="headerimg"></div>
 
+        <?php 
+        if(Yii::app()->getController()->id == "front") { 
+            echo $content; 
+        } else { 
+        ?>
+        <section>
+            <div class="row">
+                <div id="sidebar-left" class="sidebar-menu col-md-1 col-lg-1">
+                    <?php echo CHtml::link('<div class="page-logo">Logo</div>', array('/go/home'), array('class' => 'logo')); ?>
+                    <div class="page-menu">
+                        <div class="list-group">
+                            <a href="<?php echo Yii::app()->baseUrl."/halaman/order"; ?>" class="list-group-item <?php echo ($this->ID==="order")?"active":"";?>"><h2><span class="glyphicon glyphicon-transfer"></span></h2>Status Order</a>
+                            <a href="<?php echo Yii::app()->baseUrl."/halaman/konfirmasi"; ?>" class="list-group-item <?php echo ($this->ID==="konfirmasi")?"active":"";?>"><h2><span class="glyphicon glyphicon-check"></span></h2>Konfirmasi Pembayaran</a>
+                            <a href="<?php echo Yii::app()->baseUrl."/halaman/donasi"; ?>" class="list-group-item <?php echo ($this->ID==="donasi")?"active":"";?>"><h2><span class="glyphicon glyphicon-gift"></span></h2>Total Donasi</a>
+                            <a href="<?php echo Yii::app()->baseUrl."/halaman/panduan"; ?>" class="list-group-item <?php echo ($this->ID==="panduan")?"active":"";?>"><h2><span class="glyphicon glyphicon-tags"></span></h2>Panduan Pembelian</a>
+                            <a href="<?php echo Yii::app()->baseUrl."/halaman/sistem"; ?>" class="list-group-item <?php echo ($this->ID==="sistem")?"active":"";?>"><h2><span class="glyphicon glyphicon-hdd"></span></h2>Informasi System</a>
+                        </div>
+                    </div>
+                </div>
 
-        <?php echo $content; ?>
-
+                <div id="content-right" class="content-page col-lg-11 col-md-push-1">
+                    <?php echo $content; ?>
+                </div>
+            </div>
+        </section>
+        <?php } ?>
 
         <!-- javascript -->
         <script src="<?php echo $baseUrl; ?>/js/jquery.js"></script>

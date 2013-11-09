@@ -1,3 +1,4 @@
+<?php Header("Content-Type: application/x-javascript; charset=UTF-8"); ?>
 /*
 * Author:      Marco Kuiper (http://www.marcofolio.net/)
 */
@@ -104,7 +105,7 @@ $(document).ready(function() {
 		
 		// Set the background image of the new active container
 		$("#headerimg" + activeContainer).css({
-			"background-image" : "url("+window.location.pathname+"themes/sepanjang/img/" + photoObject.image + ")",
+			"background-image" : "url(<?php echo Yii::app()->baseUrl; ?>/themes/sepanjang/img/" + photoObject.image + ")",
 			"display" : "block",
 			"z-index" : currentZindex
 		});
