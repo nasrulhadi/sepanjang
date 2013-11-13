@@ -356,4 +356,43 @@ $(document).ready(function(){
     });
 
 
+    // load jtable untuk halaman semua order
+    $('#listAllOrder').jtable({
+        title: 'Table of people',
+        actions: {
+            listAction: 'http://localhost/latihan/jtable/jTable-PHP-Samples/Codes/PersonActions.php?action=list',
+        },
+        fields: {
+            PersonId: {
+                key: true,
+                list: false
+            },
+            Name: {
+                title: 'Author Name',
+                width: '40%'
+            },
+            Age: {
+                title: 'Age',
+                width: '20%'
+            },
+            RecordDate: {
+                title: 'Record date',
+                width: '30%',
+                type: 'date',
+            }
+        }
+    });
+    $('#listAllOrder').jtable('load');
+
+    <?php 
+    if(Yii::app()->getController()->id == "front") { 
+        echo "//Load person list from server
+        setInterval(function(){
+            $('#listAllOrder').jtable('load');
+        },3000);"; 
+    }
+    ?>
+
+
+
 });

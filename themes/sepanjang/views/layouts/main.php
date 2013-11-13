@@ -16,7 +16,8 @@
         <!-- css -->
         <link href="<?php echo $baseUrl; ?>/css/bootstrap.css" rel="stylesheet">
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
-        <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal.css" rel="stylesheet" /
+        <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal.css" rel="stylesheet" />
+        <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/metro/blue/jtable.css" rel="stylesheet" />
 
         <!-- custom -->
         <link href="<?php echo $baseUrl; ?>/css/style.css" rel="stylesheet">
@@ -86,7 +87,9 @@
         <script src="<?php echo $baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>
+        <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
+
     </body>
 </html>
