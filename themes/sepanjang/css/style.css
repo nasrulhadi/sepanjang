@@ -6,7 +6,7 @@
 
 * { margin: 0; }
 html { overflow-y: none; }
-body { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; /*padding-top: 50px;*/ color: #222; padding: 0; font-size: 13px; }
+body { -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; /*padding-top: 50px; color: #222;*/ color: #3D3D3D; padding: 0; font-size: 13px; }
 html, body { height:100%; }
 
 .halaman_depan { overflow:auto }
@@ -34,7 +34,7 @@ html, body { height:100%; }
 .form-form h3 span { color: #088ad5; font-weight: 700; }
 .form-step2 { margin-top: 16px; }
 .form-input-provider, .form-input-nominal { margin-top: 20px; }
-.form-total-nominal { font-size: 25px }
+.form-total-nominal { font-size: 20px }
 .form-total-label{ line-height: 30px; margin-top: -10px; margin-bottom: -5px; }
 .form-bank-detail { color: #494949; font-weight: 700; margin-bottom: 25px; }
 .form-bank-detail span { font-weight: normal; }
@@ -64,7 +64,7 @@ a.list-group-item { color: #757575; padding: 0px; }
 a.list-group-item:hover { background: none; color: #fff }
 .col-lg-1 { width: 9.0%; padding-right: 10px; padding-left: 10px;}
 .list-group h2 { margin-bottom: 0px; }
-.content-page { position:fixed; background: #fff; height: 100%; top:5px; margin-left: 9px; }
+.content-page { overflow:auto;position:fixed; background: #fff; height: 100%; top:5px; margin-left: 0px; }
 .content-base { margin: 40px 20px; font-family: Arial,Helvetica,sans-serif;}
 h3.content-tittle { line-height: 28px; font-size: 28px; color: #000; margin-top: 0px; }
 .list-submenu { list-style: none; padding: 0px; margin-bottom: 40px  }
@@ -75,6 +75,7 @@ h3.content-tittle { line-height: 28px; font-size: 28px; color: #000; margin-top:
 .content-core {  }
 .back-to-home > a, .back-to-home  > a:hover { color: #777; text-decoration: none; }
 a.logo:hover { text-decoration: none;}
+.reStatus img { cursor: pointer; margin-bottom: 5px;}
 
 
 
@@ -92,11 +93,13 @@ footer, .push { height: 50px;}
 .next-footer { background-position: 0 -1px; }
 .info-footer { background-position: -30px -1px; margin-left: 10px; margin-right: 0px; }
 .copyright-footer { background-position: -59px -1px; margin-right: 20px; }
+.footer-text { color: #777; }
 
 
 
 /* Haleloya */
 .tac { text-align:center; }
+.tar { text-align:right; }
 .none { display: none; }
 .geser-kiri-40 { margin-right: 40px; }
 .hr-border { border-top: 1px solid #eaeaea; margin-top:20px; margin-bottom: 25px; }
@@ -104,3 +107,6 @@ footer, .push { height: 50px;}
 .mtb-20 { margin-top: 20px; margin-bottom: 20px; } 
 .tebal { font-weight: bold; }
 .huruf-besar { text-transform: uppercase; }
+.kiri-20 { margin-left: 20px; }
+.tinggi-350 { min-height: 350px; }
+.inline { display: inline-block; }

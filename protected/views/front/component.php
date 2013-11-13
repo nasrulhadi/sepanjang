@@ -124,6 +124,9 @@ $(document).ready(function(){
                 setTimeout(function(){
 
                     var splitStep1 = response.split("_");
+                    var ubahstat = ubahstatus(splitStep1[8]);
+                    var splitStatus = ubahstat.split("_");
+
                     $('#tombolTerimaKasih').attr('disabled','disabled');
                     $('#counter').val(splitStep1[0]);
                     $('#bantuHapus').attr('href', window.location.pathname+"node/hapus/order/"+splitStep1[0]+"/hash/"+splitStep1[2]+"/token/"+splitStep1[7]);
@@ -131,7 +134,7 @@ $(document).ready(function(){
                     $('#operatorStep2, #operatorStep3').text(splitStep1[3]+" "+splitStep1[1]);
                     $('#nomorStep2, #nomorStep3').text(splitStep1[4]);
                     $('#voucherStep2, #voucherStep3').text(splitStep1[5]);
-                    $('#statusOrder').text(splitStep1[8]);
+                    $('#statusOrder').text(splitStatus[0]).attr('class', 'form-total-nominal '+splitStatus[1]);
                     $('#bank_'+splitStep1[6]).attr('style', 'display:block');
 
                     $('#step-1').fadeOut(500, function(){
@@ -182,8 +185,7 @@ $(document).ready(function(){
 
    // proses tahap 3 (periksa status pembayaran)
    $('#tombolCekStatus').click(function(){                     
-        $('#tombolCekStatus').button('loading');
-        $('#statusOrder').text('...');       
+        $('#tombolCekStatus').button('loading');  
         $.ajax({
             url: window.location.pathname+"/node/step3",
             type: "post",
@@ -192,9 +194,11 @@ $(document).ready(function(){
                 $('#statusOrder').html('<div class="loading"><img src="'+window.location.pathname+'/themes/sepanjang/img/load.gif" alt="Loading..." />');
             },
             success:function(data){
+                var ubahstat = ubahstatus(data);
+                var splitStatus = ubahstat.split("_");
                 setTimeout(function(){
                     $('#statusOrder').empty();
-                    $('#statusOrder').text(data);
+                    $('#statusOrder').text(splitStatus[0]).attr('class', 'form-total-nominal '+splitStatus[1]);
                     $('#tombolCekStatus').button('reset');
                 }, 2000);
             },
@@ -202,7 +206,7 @@ $(document).ready(function(){
                 $('#statusOrder').text('error');
             }
         });
-   });
+    });
 
 
     // modal hapus order
@@ -222,18 +226,134 @@ $(document).ready(function(){
     });
 
 
-    // contoh proses buat demo 
-    $('#tombolStatusOrder').click(function(){
-         $('#tombolStatusOrder').button('loading');
-         var startTimeProses = new Date().getTime();
-         var setTimerProses = setInterval(function(){
-            $('#tableResult').fadeIn(400).removeAttr('style');
-            $('#tombolStatusOrder').button('reset');
-            if(new Date().getTime() - startTimeProses > 1000){
-                clearInterval(setTimerProses);
-                return;
+    // proses cek order
+    var cekOrder;
+    $("#cekOrder-form").submit(function(event){
+        
+        if(cekOrder){
+            cekOrder.abort();
+        }
+        
+        var $form = $(this);
+        var $inputs = $form.find("input");
+        var serializedData = $form.serialize();
+        var msgerror = 'Maaf, Terjadi kesalahan pada sistem, silahkan ulangi beberapa saat lagi.';
+        var msgempty = 'Maaf, Data tidak ditemukan.';
+
+        $inputs.prop("disabled", true);
+        $('#tombolStatusOrder').button('loading');
+        $('#tableResult, #msg-error').attr('style', 'display:none');
+
+        cekOrder = $.ajax({
+            url: "<?php echo Yii::app()->baseUrl; ?>/node/cekOrder",
+            type: "post",
+            data: serializedData
+        });
+
+        cekOrder.done(function (response, textStatus, jqXHR){
+
+            $('#loading').html('<img src="<?php echo Yii::app()->baseUrl; ?>/themes/sepanjang/img/load.gif" alt="Loading..." />').attr('style', 'display:block');
+
+            if(response == "error"){
+                setTimeout(function(){
+                    $('#msg-error').text(msgerror).attr('style', 'display:block');
+                    $('#tombolStatusOrder').button('reset');
+                    $inputs.prop("disabled", false);
+                    $('#loading').attr('style', 'display:none');
+                }, 1200);
+            } else if (response == "empty"){
+                setTimeout(function(){
+                    $('#msg-error').text(msgempty).attr('style', 'display:block');
+                    $('#tombolStatusOrder').button('reset');
+                    $inputs.prop("disabled", false);
+                    $('#loading').attr('style', 'display:none');
+                }, 1200);
+            }else{
+                setTimeout(function(){
+                    var splitStep1 = response.split("_");
+                    var ubahstat = ubahstatus(splitStep1[7]);
+                    var splitStatus = ubahstat.split("_");
+                    $('#tanggalORder').text(splitStep1[0]);
+                    $('#produkOrder').text(splitStep1[1]);
+                    $('#providerOrder').text(splitStep1[2]);
+                    $('#nominalOrder').text(splitStep1[2]+" "+splitStep1[3]);
+                    $('#nomorOrder').text(splitStep1[4]);
+                    $('#hargaOrder').text(splitStep1[5]);
+                    $('#bank_'+splitStep1[6]).attr('style', 'display:block');
+                    $('#statusOrder').text(splitStatus[0]).attr('class', 'form-total-nominal inline '+splitStatus[1]);
+                    $('#counter').val(splitStep1[8]);
+                    $('#tableResult').removeAttr('style').fadeIn(400, function(){
+                        $('#loading').attr('style', 'display:none');
+                        $('#tombolStatusOrder').button('reset');
+                        $inputs.prop("disabled", false);
+                    });
+                }, 1500);
             }
-        }, 2000);
+        });
+
+        cekOrder.fail(function (jqXHR, textStatus, errorThrown){
+            $('#msg-error').text(msgerror).attr('style', 'display:block');
+            $('#tombolStatusOrder').button('reset');
+            $inputs.prop("disabled", false);
+        });
+
+        cekOrder.always(function () {
+            //$inputs.prop("disabled", false);
+        });
+
+        event.preventDefault();
+    });  
+
+    
+    // disabled "enter" form
+    $("form").bind("keypress", function(e) {
+        if (e.keyCode == 13) {
+         return false;
+        }
     });
+
+
+    // replace status ke bahasa indonesia
+    var ubahstatus = function(txt)
+    {  
+        if(txt == "waiting"){
+            return "Belum Dibayar_text-info";
+        }else if(txt == "proses"){
+            return "Sedang Diproses_text-warning";
+        }else if(txt == "sukses"){
+            return "Telah Dikirim_text-success";
+        }else if(txt == "refund"){
+            return "Uang Dikembalikan_text-danger";
+        }else if(txt == "expired"){
+            return "Kadaluarsa!_text-danger";
+        }else{
+            return "-_-";
+        }
+    }
+
+
+    // periksa status pembayaran
+    $('#reStatus').click(function(){              
+        $.ajax({
+            url: "<?php echo Yii::app()->baseUrl; ?>/node/step3",
+            type: "post",
+            data: { count: $('#counter').val() },
+            beforeSend:function(){
+                $('#statusOrder').html('<div class="loading" style="display:inline-block;"><img src="<?php echo Yii::app()->baseUrl; ?>/themes/sepanjang/img/load.gif" alt="Loading..." />');
+            },
+            success:function(data){
+                var ubahstat = ubahstatus(data);
+                var splitStatus = ubahstat.split("_");
+                setTimeout(function(){
+                    $('#statusOrder').empty();
+                    $('#statusOrder').text(splitStatus[0]).attr('class', 'form-total-nominal inline '+splitStatus[1]);
+                }, 2000);
+            },
+            error:function(){
+                $('#statusOrder').text('error');
+            }
+        });
+    });
+
 
 });

@@ -37,7 +37,7 @@
         } else { 
         ?>
         <section>
-            <div class="row">
+            <div class="row clearfix">
                 <div id="sidebar-left" class="sidebar-menu col-md-1 col-lg-1">
                     <?php echo CHtml::link('<div class="page-logo">Logo</div>', array('/go/home'), array('class' => 'logo')); ?>
                     <div class="page-menu">
@@ -53,6 +53,23 @@
 
                 <div id="content-right" class="content-page col-lg-11 col-md-push-1">
                     <?php echo $content; ?>
+                    <div class="clearfix"></div>
+                    <div class="content-base mtb-20">
+                        <hr></hr>
+                        <div class="pull-right tar footer-text">
+                            <p>
+                                <div class="form-inline">
+                                    <?php
+                                    $yahoo_mess = json_decode(Options::GetOptions("yahoo"), true);
+                                    foreach ($yahoo_mess as $result) {
+                                        echo '<div class="form-group kiri-20"><a href="ymsgr:sendIM?'.$result['value'].'"><img src="http://opi.yahoo.com/online?u='.$result['value'].'&amp;m=g&amp;t=1&amp;l=us" alt="'.$result['value'].'"/> '.$result['keterangan'].'</a></div>';
+                                    }
+                                    ?>
+                                </div>  
+                            </p>
+                            <p><?php echo json_decode(Options::GetOptions("footer_txt"))->{"value"}; ?></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

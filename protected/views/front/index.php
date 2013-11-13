@@ -174,7 +174,7 @@
 					<h3 class="form-step2"><span class="form-color-random">Nomor</span> <div class="pull-right"><strong><div id="nomorStep3"></div></strong></div></h3>
 					<hr class="hr-border"></hr>
 
-					<h3 class="form-total-label"><span class="form-color-random">Status</span> <div class="pull-right"><strong id="statusOrder" class="form-total-nominal text-info"></strong></div></h3>
+					<h3 class="form-total-label"><span class="form-color-random">Status</span> <div class="pull-right"><strong id="statusOrder" class="form-total-nominal"></strong></div></h3>
 					<hr class="hr-border"></hr>
 
 					<p class="form-color-random form-keterangan-title"><strong>Keterangan</strong></p>
