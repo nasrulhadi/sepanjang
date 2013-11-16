@@ -358,41 +358,48 @@ $(document).ready(function(){
 
     // load jtable untuk halaman semua order
     $('#listAllOrder').jtable({
-        title: 'Table of people',
+        title: ' ',
         actions: {
-            listAction: 'http://localhost/latihan/jtable/jTable-PHP-Samples/Codes/PersonActions.php?action=list',
+            listAction: '<?php echo Yii::app()->baseUrl; ?>/node/orderAll',
         },
         fields: {
-            PersonId: {
+            ord_id: {
                 key: true,
                 list: false
             },
-            Name: {
-                title: 'Author Name',
-                width: '40%'
+            ord_date: {
+                title: '<strong>Tanggal</strong>',
+                width: '20%',
+                
             },
-            Age: {
-                title: 'Age',
-                width: '20%'
+            ord_dest: {
+                title: '<strong>Nomor Tujuan</strong>',
+                width: '17%'
             },
-            RecordDate: {
-                title: 'Record date',
-                width: '30%',
-                type: 'date',
+            opt_code: {
+                title: '<strong>Produk</strong>',
+                width: '17%'
+            },
+            ord_bayar: {
+                title: '<strong>Jumlah Tagihan</strong>',
+                width: '17%'
+            },
+            ord_bank: {
+                title: '<strong>Bank Tujuan</strong>',
+                width: '14%',
+            },
+            ord_status: {
+                title: '<strong>Status</strong>',
+                width: '17%',
+                display: function(data){
+                    var ubahstat = ubahstatus(data.record.ord_status);
+                    var splitStatus = ubahstat.split("_");
+                    var dataDiv = '<div class="inline tebal '+splitStatus[1]+'">'+splitStatus[0]+'</div> ';
+                    return dataDiv;
+                }
             }
         }
     });
     $('#listAllOrder').jtable('load');
-
-    <?php 
-    if(Yii::app()->getController()->id == "front") { 
-        echo "//Load person list from server
-        setInterval(function(){
-            $('#listAllOrder').jtable('load');
-        },3000);"; 
-    }
-    ?>
-
-
 
 });

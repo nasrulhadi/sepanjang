@@ -11,6 +11,7 @@
  * @property string $ord_date
  * @property integer $ord_bayar
  * @property string $ord_bank
+ * @property string $ord_desc
  * @property string $ord_status
  */
 class Order extends CActiveRecord
@@ -31,15 +32,16 @@ class Order extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank', 'required'),
+			array('opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_desc', 'required'),
 			array('dnm_nominal, ord_bayar', 'numerical', 'integerOnly'=>true),
 			array('opt_code', 'length', 'max'=>10),
 			array('ord_dest', 'length', 'max'=>19),
 			array('ord_bank', 'length', 'max'=>20),
+			array('ord_desc', 'length', 'max'=>50),
 			array('ord_status', 'length', 'max'=>7),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ord_id, opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_status', 'safe', 'on'=>'search'),
+			array('ord_id, opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_desc, ord_status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,6 +69,7 @@ class Order extends CActiveRecord
 			'ord_date' => 'Ord Date',
 			'ord_bayar' => 'Ord Bayar',
 			'ord_bank' => 'Ord Bank',
+			'ord_desc' => 'Ord Desc',
 			'ord_status' => 'Ord Status',
 		);
 	}
@@ -96,6 +99,7 @@ class Order extends CActiveRecord
 		$criteria->compare('ord_date',$this->ord_date,true);
 		$criteria->compare('ord_bayar',$this->ord_bayar);
 		$criteria->compare('ord_bank',$this->ord_bank,true);
+		$criteria->compare('ord_desc',$this->ord_desc,true);
 		$criteria->compare('ord_status',$this->ord_status,true);
 
 		return new CActiveDataProvider($this, array(

@@ -54,13 +54,25 @@ class NodeController extends Controller
 			$getOperator = Operator::model()->find('opt_code = "'.$_POST['provider'].'"');
 			$getKategori = Kategori::model()->findByPk($_POST['kategori']);
 
+			// cari . di nomor tlp
+			$cariTitik = strpos($_POST['nomor'], ".");
+			if($cariTitik !== false ) {
+				$splitNomor = explode(".", $_POST['nomor']);
+				$nomor = $splitNomor[0];
+				$desc = $splitNomor[1];
+			} else {
+				$nomor = $_POST['nomor'];
+				$desc = "-";
+			}
+
 			$order = new Order;
 			$order->opt_code = $getOperator->opt_code;
 			$order->dnm_nominal	 = $getDenomNominal->dnm_nominal;
-			$order->ord_dest = $_POST['nomor'];
+			$order->ord_dest = $nomor;
 			$order->ord_date = date("Y-m-d H:i:s");
 			$order->ord_bayar = $splitDenom[1];
 			$order->ord_bank = $_POST['bank'];
+			$order->ord_desc = $desc;
 			$order->ord_status = "waiting";
 
 			if($order->save()){
@@ -81,13 +93,14 @@ class NodeController extends Controller
 					 MyFormatter::rupiah($getDenomNominal->dnm_nominal)."_".
 					 $splitDenom[1]."_".
 					 $getOperator->opt_name."_".
-					 $_POST['nomor']."_".
+					 $nomor."_".
 					 $getKategori->ktg_nama."_".
 					 $_POST['bank']."_".
 					 md5(sha1($_POST['keystore']))."_".
 					 "waiting";
 			} else {
 				echo "error1";
+				//print_r($order->getErrors());
 			}
 		} else {
 			echo "error2";
@@ -157,5 +170,33 @@ class NodeController extends Controller
 		} else {
 			echo "error";
 		}
+	}
+
+
+	public function actionOrderAll()
+	{
+		$getOrder = Order::model()->findAllByAttributes(array(), array('limit' => 20, 'order' => 'ord_id desc'));
+
+		$listdata = array();
+		$i = 0;
+		foreach($getOrder as $result)
+		{
+		    $getProduk = Operator::model()->findByAttributes(array('opt_code' => $result->opt_code));
+
+		    $listdata[$i]['ord_id'] = $result->ord_id;
+		    $listdata[$i]['ord_date'] = MyFormatter::formatDateNoYear($result->ord_date);
+		    $listdata[$i]['ord_dest'] = substr($result->ord_dest, 0, -4)."xxxx";
+		    $listdata[$i]['ord_bayar'] = $result->ord_bayar;
+		    $listdata[$i]['ord_bank'] = $result->ord_bank=="mandiri"?"Mandiri":"BCA";
+		    $listdata[$i]['ord_status'] = $result->ord_status;
+		    $listdata[$i]['opt_code'] = $getProduk->opt_name;
+		    $i++;
+		}
+
+		$jTableResult = array();
+		$jTableResult['Result'] = "OK";
+		$jTableResult['Records'] = $listdata;
+		echo json_encode($jTableResult);
+		//var_dump($listdata);
 	}
 }

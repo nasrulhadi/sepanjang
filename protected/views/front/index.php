@@ -17,7 +17,7 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle geser-kiri-40" data-toggle="dropdown">
-					<span class="glyphicon glyphicon-comment"></span> &nbsp; Perlu Bantuan ? <b class="caret"></b>
+					<span class="glyphicon glyphicon-comment"></span> &nbsp; Bisa Dibantu ? <b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">
 					<li class="dropdown-header">Kami Siap Membantu</li>
@@ -31,12 +31,12 @@
 
 					<li class="dropdown-header">Panduan Pembelian</li>
 					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-check"></span> &nbsp; Tata Cara Pembelian', array('/halaman/panduan')); ?></li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan yg Sering Diajukan', array('/halaman/faq')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan Umum', array('/halaman/faq')); ?></li>
 					<li class="divider"></li>
 
 					<li class="dropdown-header">Informasi Sistem</li>
 					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-hdd"></span> &nbsp; Status Server', array('/halaman/sistem')); ?></li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-saved"></span> &nbsp; Total Transaksi', array('/halaman/transaksi')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-saved"></span> &nbsp; Total Transaksi', array('/halaman/sistem/transaksi')); ?></li>
 				</ul>
 			</li>
 		</ul>

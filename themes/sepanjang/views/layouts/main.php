@@ -17,6 +17,7 @@
         <link href="<?php echo $baseUrl; ?>/css/bootstrap.css" rel="stylesheet">
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal.css" rel="stylesheet" />
+        <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/redmond/jquery-ui.custom.css" rel="stylesheet" />
         <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/metro/blue/jtable.css" rel="stylesheet" />
 
         <!-- custom -->
@@ -78,6 +79,7 @@
 
         <!-- javascript -->
         <script src="<?php echo $baseUrl; ?>/js/jquery.js"></script>
+        <script src="<?php echo $baseUrl; ?>/js/jquery-ui.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/jquery-migrate.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/jquery.actual.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/button.js"></script>
@@ -90,6 +92,11 @@
         <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
+        <?php 
+        if($this->action->id == "semua") { 
+            echo "<script>setInterval(function(){ $('#listAllOrder').jtable('load')},30000);</script>"; 
+        }
+        ?>
 
     </body>
 </html>
