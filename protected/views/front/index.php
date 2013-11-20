@@ -199,7 +199,7 @@
 
 		<div id="batalkanpesanan" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
 			<div class="modal-body">
-				<p>Bantu Kami <strong>menghapus</strong> data ini jika Anda merasa pesanan yang Anda tentukan tidak sesuai atau salah. </p>
+				<p>Bantu Kami <strong>menghapus</strong> data ini jika merasa pesanan yang ditentukan tidak sesuai atau salah. </p>
 			</div>
 			<div class="modal-footer">
 				<button type="button" data-dismiss="modal" class="btn btn-default">Batal Menghapus</button>

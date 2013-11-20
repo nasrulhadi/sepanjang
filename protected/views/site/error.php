@@ -8,8 +8,8 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h2 class="error">Error <?php echo $code; ?></h2>
+<h2 class="error-page">Error <?php echo $code; ?></h2>
 
-<div class="error">
+<div class="error-page">
 <?php echo CHtml::encode($message); ?>
 </div>

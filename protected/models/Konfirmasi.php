@@ -4,6 +4,7 @@
  * This is the model class for table "konfirmasi".
  *
  * The followings are the available columns in table 'konfirmasi':
+ * @property integer $knf_id
  * @property integer $ord_id
  * @property string $knf_date
  * @property string $knf_buyer
@@ -11,6 +12,10 @@
  */
 class Konfirmasi extends CActiveRecord
 {
+	public $verifyCode;
+	public $nomor;
+	public $bank;
+
 	/**
 	 * @return string the associated database table name
 	 */
@@ -27,12 +32,15 @@ class Konfirmasi extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('ord_id, knf_date, knf_buyer, knf_nominal', 'required'),
-			array('ord_id, knf_nominal', 'numerical', 'integerOnly'=>true),
+			//array('ord_id, knf_date, knf_buyer, knf_nominal', 'required'),
+			array('ord_id, nomor, knf_nominal', 'numerical', 'integerOnly'=>true, 'message'=>'{attribute} harus diisi angka'),
 			array('knf_buyer', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ord_id, knf_date, knf_buyer, knf_nominal', 'safe', 'on'=>'search'),
+			array('knf_id, ord_id, knf_date, knf_buyer, knf_nominal', 'safe', 'on'=>'search'),
+			array('verifyCode', 'captcha', 'allowEmpty'=>!CCaptcha::checkRequirements(), 'message'=>'{attribute} tidak benar'),
+			array('knf_buyer, nomor, knf_nominal, bank, knf_date', 'required', 'message'=>'{attribute} tidak boleh kosong'),
+			array('ord_id', 'cekOrder'),
 		);
 	}
 
@@ -53,10 +61,13 @@ class Konfirmasi extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'knf_id' => 'Knf',
 			'ord_id' => 'Ord',
 			'knf_date' => 'Knf Date',
-			'knf_buyer' => 'Knf Buyer',
-			'knf_nominal' => 'Knf Nominal',
+			'knf_buyer' => 'Nama Pembeli',
+			'knf_nominal' => 'Nominal',
+			'verifyCode'=>'Anti Spam',
+			'nomor' => 'Nomor Telepon'
 		);
 	}
 
@@ -78,6 +89,7 @@ class Konfirmasi extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('knf_id',$this->knf_id);
 		$criteria->compare('ord_id',$this->ord_id);
 		$criteria->compare('knf_date',$this->knf_date,true);
 		$criteria->compare('knf_buyer',$this->knf_buyer,true);
@@ -97,5 +109,25 @@ class Konfirmasi extends CActiveRecord
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+	public function cekOrder($attribute,$params)
+	{
+		if($this->knf_date == "kemarin"){
+			$tanggal = date('Y-m-d', time() - ((60*60*24)*1));
+		}else{
+			$tanggal = date('Y-m-d');			
+		}
+
+		$criteria=new CDbCriteria;
+	   	$criteria->condition = "ord_dest = '".$this->nomor."' AND ord_bank = '".$this->bank."' AND dnm_nominal = '".$this->knf_nominal."' AND DATE(ord_date) = '".$tanggal."'";
+
+		$periksa = Order::model()->findAll($criteria);
+
+		if(count($periksa) == 0){
+			if($this->nomor != "" && $this->knf_buyer != "" && $this->knf_nominal != ""){
+				$this->addError('ord_id', 'Kami tidak bisa menemukan rincian Order seperti yang diminta, tolong bantu kami untuk memasukan data dengan benar.');
+			}
+		}
 	}
 }

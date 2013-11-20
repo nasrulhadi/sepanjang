@@ -340,12 +340,14 @@ $(document).ready(function(){
             data: { count: $('#counter').val() },
             beforeSend:function(){
                 $('#statusOrder').html('<div class="loading" style="display:inline-block;"><img src="<?php echo Yii::app()->baseUrl; ?>/themes/sepanjang/img/load.gif" alt="Loading..." />');
+                $('#reload').attr('style', 'display:none');
             },
             success:function(data){
                 var ubahstat = ubahstatus(data);
                 var splitStatus = ubahstat.split("_");
                 setTimeout(function(){
                     $('#statusOrder').empty();
+                    $('#reload').attr('style', 'display:inline-block');
                     $('#statusOrder').text(splitStatus[0]).attr('class', 'form-total-nominal inline '+splitStatus[1]);
                 }, 2000);
             },

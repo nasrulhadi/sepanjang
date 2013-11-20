@@ -70,7 +70,7 @@
                 </tr>
                 <tr>
                     <td>Status</td>
-                    <td><div class="form-total-nominal inline" id="statusOrder">Transaksi berhasil</div> &nbsp;&nbsp;&nbsp;<span id="reStatus" class="reStatus"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/reload.png" title="reload" alt="reload"></span></td>
+                    <td><div class="form-total-nominal inline" id="statusOrder">Transaksi berhasil</div> &nbsp;&nbsp;&nbsp;<span id="reStatus" class="reStatus"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/reload.png" id="reload" title="reload" alt="reload"></span></td>
                 </tr>
             </tbody>
         </table>

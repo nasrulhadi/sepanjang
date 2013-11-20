@@ -80,7 +80,9 @@ a.logo:hover { text-decoration: none;}
 
 
 /* Page Error */
-.error { margin-left: 20px; }
+.error-page { margin-left: 20px; }
+.error { border-color: #C00; }
+.errorMessage { color: #C00; }
 
 
 
@@ -111,3 +113,6 @@ footer, .push { height: 50px;}
 .tinggi-350 { min-height: 350px; }
 .inline { display: inline-block; }
 .mt-20 { margin-top: 20px; }
+.mt-40 { margin-top: 40px; }
+.required { color: red;}
+.pointer { cursor: pointer;}
