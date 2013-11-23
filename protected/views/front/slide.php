@@ -105,7 +105,7 @@ $(document).ready(function() {
 		
 		// Set the background image of the new active container
 		$("#headerimg" + activeContainer).css({
-			"background-image" : "url(<?php echo Yii::app()->baseUrl; ?>/themes/sepanjang/img/" + photoObject.image + ")",
+			"background-image" : "url(<?php echo Yii::app()->baseUrl; ?>/images/background/" + photoObject.image + ")",
 			"display" : "block",
 			"z-index" : currentZindex
 		});

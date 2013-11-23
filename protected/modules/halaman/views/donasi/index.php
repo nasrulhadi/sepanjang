@@ -1,13 +1,46 @@
-<?php
-/* @var $this DonasiController */
+<div class="content-base tinggi-350">
+    <h3 class="content-tittle">Donasi</h3>
+    <div class="content-submenu">
+        <div class="pull-right back-to-home"><?php echo CHtml::link('<span class="glyphicon glyphicon-home"></span> Beranda', array('/go/home')); ?></div>
+        <ul class="list-submenu">
+           <li><?php echo CHtml::link('Donasi', array('/halaman/donasi'), array('class' => 'active')); ?></li>
+        </ul>
+    </div>
+    <div class="content-core">
+    	<div class="col-md-7 npl npr header-slidexxx" >
+	        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="2000">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
 
-$this->breadcrumbs=array(
-	'Donasi',
-);
-?>
-<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active">
+						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/header-donasi/headerSSC3.png" alt="Quote - Surabaya Save Child Street" class="img-rounded img-responsive">
+					</div>
+				</div>
+				<div class="carousel-inner">
+					<div class="item">
+						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/header-donasi/headerSSC2.png" alt="Inilah Kami - Surabaya Save Child Street" class="img-rounded img-responsive">
+					</div>
+				</div>
+				<div class="carousel-inner">
+					<div class="item">
+						<img src="<?php echo Yii::app()->request->baseUrl; ?>/images/header-donasi/headerSSC1.png" alt="Hope - Surabaya Save Child Street" class="img-rounded img-responsive">
+					</div>
+				</div>
 
-<p>
-	You may change the content of this page by modifying
-	the file <tt><?php echo __FILE__; ?></tt>.
-</p>
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>     
+		</div>   
+    </div>
+</div>

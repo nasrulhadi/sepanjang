@@ -86,6 +86,7 @@
         <script src="<?php echo $baseUrl; ?>/js/modal.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/tooltip.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/popover.js"></script>
+        <script src="<?php echo $baseUrl; ?>/js/carousel.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>

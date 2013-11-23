@@ -76,6 +76,7 @@ h3.content-tittle { line-height: 28px; font-size: 28px; color: #000; margin-top:
 .back-to-home > a, .back-to-home  > a:hover { color: #777; text-decoration: none; }
 a.logo:hover { text-decoration: none;}
 .reStatus img { cursor: pointer; margin-bottom: 5px;}
+.header-slide { background-color: #332921; }
 
 
 
@@ -106,6 +107,7 @@ footer, .push { height: 50px;}
 .geser-kiri-40 { margin-right: 40px; }
 .hr-border { border-top: 1px solid #eaeaea; margin-top:20px; margin-bottom: 25px; }
 .npl { padding-left: 0px; }
+.npr { padding-right: 0px; }
 .mtb-20 { margin-top: 20px; margin-bottom: 20px; } 
 .tebal { font-weight: bold; }
 .huruf-besar { text-transform: uppercase; }
