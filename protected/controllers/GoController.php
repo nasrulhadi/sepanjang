@@ -10,6 +10,6 @@ class GoController extends Controller
 	public function actionHome()
 	{
 		Yii::app()->session['keySalt'] = Options::model()->getSession();
-		$this->redirect(array('/'));
+		$this->redirect(Yii::app()->request->getBaseUrl(true));
 	}
 }

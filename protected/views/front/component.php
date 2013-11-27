@@ -404,4 +404,11 @@ $(document).ready(function(){
     });
     $('#listAllOrder').jtable('load');
 
+
+
+    // menjalankan slider di halaman donasi
+    $('.carousel').carousel({
+        interval: 15000
+    });
+
 });

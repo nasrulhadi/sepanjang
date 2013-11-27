@@ -77,6 +77,8 @@ h3.content-tittle { line-height: 28px; font-size: 28px; color: #000; margin-top:
 a.logo:hover { text-decoration: none;}
 .reStatus img { cursor: pointer; margin-bottom: 5px;}
 .header-slide { background-color: #332921; }
+.carousel-control.left { background-image: none; background-image: none; background-image: none; background-image: none; filter: none; }
+.carousel-control.right { background-image: none; background-image: none; background-image: none; background-image: none; filter: none; }
 
 
 
