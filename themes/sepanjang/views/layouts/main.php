@@ -84,13 +84,14 @@
         <script src="<?php echo $baseUrl; ?>/js/jquery.actual.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/button.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/modal.js"></script>
+        <script src="<?php echo $baseUrl; ?>/js/tooltip.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/popover.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/transition.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>
-        <?php if($this->action->id == "semua") { ?><script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
-        <?php } ?><script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>
+        <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
         <?php 
         if($this->action->id == "semua") { 

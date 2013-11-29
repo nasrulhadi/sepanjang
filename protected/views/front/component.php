@@ -109,7 +109,7 @@ $(document).ready(function(){
         $('#tombolProses').button('loading');
 
         step1 = $.ajax({
-            url: window.location.pathname+"/node/step1",
+            url: "<?php echo Yii::app()->baseUrl; ?>/node/step1",
             type: "post",
             data: serializedData
         });
@@ -129,7 +129,7 @@ $(document).ready(function(){
 
                     $('#tombolTerimaKasih').attr('disabled','disabled');
                     $('#counter').val(splitStep1[0]);
-                    $('#bantuHapus').attr('href', window.location.pathname+"node/hapus/order/"+splitStep1[0]+"/hash/"+splitStep1[2]+"/token/"+splitStep1[7]);
+                    $('#bantuHapus').attr('href', "<?php echo Yii::app()->baseUrl; ?>/node/hapus/order/"+splitStep1[0]+"/hash/"+splitStep1[2]+"/token/"+splitStep1[7]);
                     $('#tagihanStep2').text(splitStep1[2]);
                     $('#operatorStep2, #operatorStep3').text(splitStep1[3]+" "+splitStep1[1]);
                     $('#nomorStep2, #nomorStep3').text(splitStep1[4]);
@@ -187,11 +187,11 @@ $(document).ready(function(){
    $('#tombolCekStatus').click(function(){                     
         $('#tombolCekStatus').button('loading');  
         $.ajax({
-            url: window.location.pathname+"/node/step3",
+            url: "<?php echo Yii::app()->baseUrl; ?>/node/step3",
             type: "post",
             data: { count: $('#counter').val() },
             beforeSend:function(){
-                $('#statusOrder').html('<div class="loading"><img src="'+window.location.pathname+'/themes/sepanjang/img/load.gif" alt="Loading..." />');
+                $('#statusOrder').html('<div class="loading"><img src="<?php echo Yii::app()->baseUrl; ?>/themes/sepanjang/img/load.gif" alt="Loading..." />');
             },
             success:function(data){
                 var ubahstat = ubahstatus(data);
