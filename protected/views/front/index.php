@@ -176,7 +176,7 @@
 				</fieldset>
 
 				<fieldset id="step-3" style="display:none">
-					<legend class="form-color-random">Periksa Status Order</legend>
+					<legend class="form-color-random">Status Order</legend>
 					<h3 class="form-step2"><span class="form-color-random">Voucher</span> <div class="pull-right"><strong><div id="voucherStep3"></div></strong></div></h3>
 					<h3 class="form-step2"><span class="form-color-random">Nominal</span> <div class="pull-right"><strong><div id="operatorStep3"></div></strong></div></h3>
 					<h3 class="form-step2"><span class="form-color-random">Nomor</span> <div class="pull-right"><strong><div id="nomorStep3"></div></strong></div></h3>
