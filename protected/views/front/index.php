@@ -59,7 +59,11 @@
 					<noscript><div class="alert alert-danger">Sebelum melakukan order, aktifkan dulu <strong>javascript</strong> di browser Anda.</div></noscript>
 					<h3><span class="form-color-random">01.</span> Pilih Voucher</h3>
 					<?php
-					$kategori = CHtml::listData(Kategori::model()->findAll(array('order'=>'ktg_id')),'ktg_id','ktg_nama');
+					$criteria=new CDbCriteria;
+				   	$criteria->condition = 'ktg_status = :status';
+				   	$criteria->params = array(':status' => 1);
+				   	$criteria->order = 'ktg_id';
+					$kategori = CHtml::listData(Kategori::model()->findAll($criteria),'ktg_id','ktg_nama');
 					echo CHtml::dropDownList('kategori','',$kategori,
 						array(
 							'empty' => '- Pilih Voucher -',
@@ -86,7 +90,9 @@
 									'url'=>CController::createUrl('/node/getnominal'),
 									'update'=>'#nominal', 
 									'success'=>'function(data){
-										$("#nominal").html(data);
+										var splitNominal = data.split("%");
+										$("#nominal").html(splitNominal[0]);
+										$("#keyhash").val(splitNominal[1]);
 									}'
 								),
 						  ));
@@ -117,6 +123,7 @@
 							Yii::app()->session['keySalt'] = Options::model()->getSession();
 						} 
 						echo CHtml::hiddenField('keystore', Yii::app()->session['keySalt']); 
+						echo CHtml::hiddenField('keyhash', "0"); 
 						?>
 						<input type="submit" id="tombolProses" data-loading-text="Tunggu..." class="btn btn-success" value="Proses" disabled >
 					</div>

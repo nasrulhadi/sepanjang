@@ -2,6 +2,9 @@
 
 class NodeController extends Controller
 {
+	public $kunciPerkalian = 3107;
+
+
 	public function actionIndex()
 	{
 		$this->redirect(array('/go/home'));
@@ -42,16 +45,19 @@ class NodeController extends Controller
         foreach ($model as $result) {
             echo CHtml::tag('option', array('value' => $result->dnm_id."_".($result->dnm_price+$random)), CHtml::encode($result->dnm_nominal." ~> ".($result->dnm_price+$random)), true);
         }
+
+        echo "%".$random * $this->kunciPerkalian;
 	}
 
 	public function actionStep1()
 	{
 		$session = Yii::app()->session['keySalt'];
-		if($_POST['keystore'] == $session){
+
+		if($_POST['keystore'] == $session && $_POST['keyhash'] != "" && $_POST['keyhash'] != 0){
 
 			$splitDenom = explode("_", $_POST['nominal']);
 			$getDenomNominal = Denom::model()->findByPk($splitDenom[0]);
-			$getOperator = Operator::model()->find('opt_code = "'.$_POST['provider'].'"');
+			$getOperator = Operator::model()->findByAttributes(array('opt_code' => $_POST['provider']));
 			$getKategori = Kategori::model()->findByPk($_POST['kategori']);
 
 			// cari . di nomor tlp
@@ -65,12 +71,16 @@ class NodeController extends Controller
 				$desc = "-";
 			}
 
+			// re get keyhash
+			$random = $_POST['keyhash'] / $this->kunciPerkalian;
+
+			// simpan order
 			$order = new Order;
 			$order->opt_code = $getOperator->opt_code;
 			$order->dnm_nominal	 = $getDenomNominal->dnm_nominal;
 			$order->ord_dest = $nomor;
 			$order->ord_date = date("Y-m-d H:i:s");
-			$order->ord_bayar = $splitDenom[1];
+			$order->ord_bayar = $getDenomNominal->dnm_price + $random;
 			$order->ord_bank = $_POST['bank'];
 			$order->ord_desc = $desc;
 			$order->ord_status = "waiting";
@@ -91,7 +101,7 @@ class NodeController extends Controller
 
 				echo $order->ord_id."_".
 					 MyFormatter::rupiah($getDenomNominal->dnm_nominal)."_".
-					 $splitDenom[1]."_".
+					 ($getDenomNominal->dnm_price + $random)."_".
 					 $getOperator->opt_name."_".
 					 $nomor."_".
 					 $getKategori->ktg_nama."_".
