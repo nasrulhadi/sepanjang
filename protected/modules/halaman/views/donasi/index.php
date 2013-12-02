@@ -39,9 +39,21 @@
 			</div>     
 		</div>
 		<div class="clearfix"></div>
-		<div class="col-md-8 npl">
-			<p><h3 class="inline">TOTAL DONASI  &nbsp; <span class="text-warning">Rp. 2.000.000,-</span></h3></p>
-			<p class="text-muted">-- donasi terkumpul dari transaksi per bulan <?php echo date("F"); ?>.</p>
+		<?php
+		$donasi = json_decode(Options::GetOptions("donasi"))->{"value"};
+
+		$criteria=new CDbCriteria;
+   		$criteria->condition = "ord_status = 'sukses' AND ord_desc = '' AND month(ord_date) = '".date("m")."'";
+   		$transaksiSukses = Order::model()->count($criteria);
+
+		$totalDonasi = $donasi * $transaksiSukses;
+		?>
+		<div class="col-md-8 npl mt-20">
+			<div class="inline fl"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/donasi.png" width="128" height="128" alt="img-donasi" class="img-responsive"></div>
+			<div class="inline fl kiri-20">
+				<h3>TOTAL DONASI</h3><h2> <span class="text-danger tebal">Rp. <?php echo MyFormatter::rupiah($totalDonasi);?>,-</span></h2>
+				<p class="text-muted">-- Donasi diatas adalah akumulasi dari total transaksi sukses pada bulan <?php echo MyFormatter::formatBulanIndonesia(); ?>.</p>
+			</div>
 		</div>
 		<div class="clearfix"></div>
 		<div class="col-md-8 npl">
@@ -84,12 +96,31 @@
 					<li>Turut serta mencerdaskan anak bangsa dengan membimbing ke jalan yang baik dan benar.</li>
 				</ul>
 				<br><br>
-				<p>
-					<span class="text-info tebal">Facebook</span> : <a title="Save Street Child Surabaya Page's" target="_blank" href="https://www.facebook.com/SSChildSurabaya">Save Street Child Surabaya</a><br>
-					<span class="text-primary tebal">Twitter</span> : <a title="Official Twitter of Save Street Child Surabaya" target="_blank" href="http://twitter.com/SSChildSurabaya">@SSChildSurabaya</a><br>
-					<span class="text-danger tebal">Telepon / SMS</span> : 08819620694 (Advin)<br>
-					<span class="text-warning tebal">Basecamp</span> : Rumah Cita Citaku, Jl. Gunungsari no. 20 Surabaya
-				</p>
+				<div class="col-md-8 bs-social npl">
+					<ul class="bs-social-buttons">
+						<li>
+							<a target="_blank" href="https://www.facebook.com/SSChildSurabaya" class="get-popover-social" data-toggle="popover" data-content="Save Street Child Surabaya Page<br><em class='text-muted'>-- klik untuk mengunjungi</em>" data-html="true" data-placement="top" data-container="body" data-original-title="<strong>Facebook</strong>" data-trigger="hover">
+								<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/facebook-icon.png" alt="Facebook" class="img-responsive">
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://twitter.com/SSChildSurabaya" class="get-popover-social" data-toggle="popover" data-content="Official Twitter of SSC Surabaya<br><em class='text-muted'>-- klik untuk mengunjungi</em>" data-html="true" data-placement="top" data-container="body" data-original-title="<strong>Twitter</strong>" data-trigger="hover">
+								<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/twitter-icon.png" alt="Twitter" class="img-responsive">
+							</a>
+						</li>
+						<li>
+							<a target="_blank" href="http://www.sschildsurabaya.com/" class="get-popover-social" data-toggle="popover" data-content="Official Website of SSC Surabaya<br><em class='text-muted'>-- klik untuk mengunjungi</em>" data-html="true" data-placement="top" data-container="body" data-original-title="<strong>Website</strong>" data-trigger="hover">
+								<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/dribbble-icon.png" alt="Website" class="img-responsive">
+							</a>
+						</li>
+						<li>
+							<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/aws-icon.png" alt="Telepon / SMS" class="img-responsive get-popover-social" data-toggle="popover" data-content="08819620694 (Advin)<br><em class='text-muted'>-- klik lagi untuk keluar</em>" data-html="true" data-placement="top" data-container="body" data-original-title="<strong>Telepon / SMS</strong>">
+						</li>
+						<li>
+							<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/pinboard-icon.png" alt="Basecamp" class="img-responsive get-popover-social" data-toggle="popover" data-content="Rumah Cita Citaku, Jl. Gunungsari no. 20 Surabaya<br><em class='text-muted'>-- klik lagi untuk keluar</em>" data-html="true" data-placement="top" data-container="body" data-original-title="<strong>Basecamp</strong>">
+						</li>
+					</ul>
+				</div>
 			</p>
 		</div>   
     </div>

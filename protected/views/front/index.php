@@ -56,6 +56,7 @@
 			?>
 				<fieldset id="step-1">
 					<legend class="form-color-random">Pesan Sekarang!</legend>
+					<noscript><div class="alert alert-danger">Sebelum melakukan order, aktifkan dulu <strong>javascript</strong> di browser Anda.</div></noscript>
 					<h3><span class="form-color-random">01.</span> Pilih Voucher</h3>
 					<?php
 					$kategori = CHtml::listData(Kategori::model()->findAll(array('order'=>'ktg_id')),'ktg_id','ktg_nama');

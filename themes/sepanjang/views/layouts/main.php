@@ -54,22 +54,26 @@
                 </div>
 
                 <div id="content-right" class="content-page col-lg-11 col-md-push-1">
+                    <noscript><div class="alert alert-danger mt-20">Sistem mendeteksi <strong>javascript</strong> di browser Anda sedang tidak aktif, yang mengakibatkan tidak berfungsinya transaksi data di beberapa halaman.</div></noscript>
                     <?php echo $content; ?>
                     <div class="clearfix"></div>
-                    <div class="content-base mtb-20">
-                        <hr></hr>
-                        <div class="pull-right tar footer-text">
+                    <div class="content-base">
+                        <hr class="hr-footer"></hr>
+                        <div class="pull-left tal footer-text mb-20">
                             <p>
-                                <div class="form-inline">
+                                <div class="form-inline mb-20">
                                     <?php
                                     $yahoo_mess = json_decode(Options::GetOptions("yahoo"), true);
                                     foreach ($yahoo_mess as $result) {
-                                        echo '<div class="form-group kiri-20"><a href="ymsgr:sendIM?'.$result['value'].'"><img src="http://opi.yahoo.com/online?u='.$result['value'].'&amp;m=g&amp;t=1&amp;l=us" alt="'.$result['value'].'"/> '.$result['keterangan'].'</a></div>';
+                                        echo '<div class="form-group kanan-20"><a href="ymsgr:sendIM?'.$result['value'].'"><img src="http://opi.yahoo.com/online?u='.$result['value'].'&amp;m=g&amp;t=1&amp;l=us" alt="'.$result['value'].'"/> '.$result['keterangan'].'</a></div>';
                                     }
                                     ?>
                                 </div>  
                             </p>
                             <p><?php echo json_decode(Options::GetOptions("footer_txt"))->{"value"}; ?></p>
+                        </div>
+                        <div class="pull-right tar footer-text">
+                            <img src="<?php echo $baseUrl; ?>/img/sealGlogalSign.png">
                         </div>
                     </div>
                 </div>

@@ -100,24 +100,35 @@ footer, .push { height: 50px;}
 .info-footer { background-position: -30px -1px; margin-left: 10px; margin-right: 0px; }
 .copyright-footer { background-position: -59px -1px; margin-right: 20px; }
 .footer-text { color: #777; }
+.bs-social { text-align:left; margin-top: 20px; margin-bottom: 20px;}
+.bs-social-buttons { display: inline-block; margin-bottom: 0; padding-left: 0; list-style: none; }
+.bs-social-buttons li { display: inline-block;line-height: 1;padding: 5px 8px;}
+.get-popover-social {cursor: pointer;}
+.hr-footer { margin-top: 40px; margin-bottom: 30px; }
 
 
 
 /* Haleloya */
 .tac { text-align:center; }
 .tar { text-align:right; }
+.tal { text-align:left; }
 .none { display: none; }
 .geser-kiri-40 { margin-right: 40px; }
 .hr-border { border-top: 1px solid #eaeaea; margin-top:20px; margin-bottom: 25px; }
 .npl { padding-left: 0px; }
 .npr { padding-right: 0px; }
 .mtb-20 { margin-top: 20px; margin-bottom: 20px; } 
+.mtb-40 { margin-top: 40px; margin-bottom: 40px; } 
 .tebal { font-weight: bold; }
 .huruf-besar { text-transform: uppercase; }
 .kiri-20 { margin-left: 20px; }
+.kanan-20 { margin-right: 20px; }
 .tinggi-350 { min-height: 350px; }
 .inline { display: inline-block; }
 .mt-20 { margin-top: 20px; }
 .mt-40 { margin-top: 40px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
 .required { color: red;}
 .pointer { cursor: pointer;}
+.fl { float: left; }

@@ -81,7 +81,9 @@ $(document).ready(function(){
         delay: { show: 300, hide: 100 },
         container : 'body',
         html : true
-    });               
+    });
+
+    $('.get-popover-social').popover();               
 
 
     // dropdown navbar
