@@ -31,7 +31,7 @@
 
 					<li class="dropdown-header">Panduan Pembelian</li>
 					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-check"></span> &nbsp; Tata Cara Pembelian', array('/halaman/panduan')); ?></li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan Umum', array('/halaman/faq')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan Umum', array('/halaman/panduan/faq')); ?></li>
 					<li class="divider"></li>
 
 					<li class="dropdown-header">Informasi Sistem</li>

@@ -63,4 +63,14 @@ class KonfirmasiController extends Controller
             'model'=>$model,
         ));
 	}
+
+
+	public function actionStruk()
+	{
+		$model=new Konfirmasi;
+
+        $this->render('struk',array(
+            'model'=>$model,
+        ));
+	}
 }

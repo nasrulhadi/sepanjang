@@ -12511,3 +12511,52 @@ Stack trace:
 REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
 HTTP_REFERER=http://localhost/sepanjang/halaman/order
 ---
+2013/12/02 10:35:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "struk".' in /var/www/yii.1.1.14/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CController.php(270): CController->missingAction('struk')
+#1 /var/www/yii.1.1.14/framework/web/CWebApplication.php(282): CController->run('struk')
+#2 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('halaman/konfirm...')
+#3 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sepanjang/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/sepanjang/halaman/konfirmasi/struk
+HTTP_REFERER=http://localhost/sepanjang/halaman/konfirmasi
+---
+2013/12/02 10:44:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "transaksi".' in /var/www/yii.1.1.14/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CController.php(270): CController->missingAction('transaksi')
+#1 /var/www/yii.1.1.14/framework/web/CWebApplication.php(282): CController->run('transaksi')
+#2 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('halaman/sistem/...')
+#3 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/sepanjang/index.php(15): CApplication->run()
+#5 {main}
+REQUEST_URI=/sepanjang/halaman/sistem/transaksi
+HTTP_REFERER=http://localhost/sepanjang/halaman/sistem
+---
+2013/12/02 10:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "halaman/faq".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('halaman/faq')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/halaman/faq
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2013/12/02 10:49:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "halaman/faq".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('halaman/faq')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/halaman/faq
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2013/12/02 10:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "halaman/faq".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('halaman/faq')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/halaman/faq
+HTTP_REFERER=http://localhost/sepanjang/
+---
