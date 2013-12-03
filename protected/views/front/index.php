@@ -12,15 +12,32 @@
 			<li class="active"><a href="<?php echo Yii::app()->baseUrl."/go/home"; ?>"><?php echo json_decode(Options::GetOptions("web_name"))->{"value"}; ?></a></li>
 			<li><?php echo CHtml::link('Status Order', array('/halaman/order')); ?></li>
 			<li><?php echo CHtml::link('Konfirmasi Pembayaran', array('/halaman/konfirmasi')); ?></li>
-			<li><?php echo CHtml::link('Total Donasi', array('/halaman/donasi')); ?></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+					Menu Lainnya <b class="caret"></b>
+				</a>
+				<ul class="dropdown-menu">
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-gift"></span> &nbsp; Total Donasi', array('/halaman/donasi')); ?></li>
+					<li class="divider"></li>
+
+					<li class="dropdown-header">Panduan Pembelian</li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-tag"></span> &nbsp; Panduan', array('/halaman/panduan')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-tags"></span> &nbsp; Pertanyaan Umum', array('/halaman/panduan/faq')); ?></li>
+					<li class="divider"></li>
+
+					<li class="dropdown-header">Informasi Sistem</li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-hdd"></span> &nbsp; Status Server', array('/halaman/sistem')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-saved"></span> &nbsp; Total Transaksi', array('/halaman/sistem/transaksi')); ?></li>
+				</ul>
+			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right">
-			<li class="dropdown">
+			<li class="dropdown mb-20">
 				<a href="#" class="dropdown-toggle geser-kiri-40" data-toggle="dropdown">
 					<span class="glyphicon glyphicon-comment"></span> &nbsp; Bisa Dibantu ? <b class="caret"></b>
 				</a>
 				<ul class="dropdown-menu">
-					<li class="dropdown-header">Kami Siap Membantu</li>
+					<li class="dropdown-header">Yahoo! Messenger</li>
 					<?php
 					$yahoo_mess = json_decode(Options::GetOptions("yahoo"), true);
 					foreach ($yahoo_mess as $result) {
@@ -29,14 +46,10 @@
 					?>
 					<li class="divider"></li>
 
-					<li class="dropdown-header">Panduan Pembelian</li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-check"></span> &nbsp; Tata Cara Pembelian', array('/halaman/panduan')); ?></li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-question-sign"></span> &nbsp; Pertanyaan Umum', array('/halaman/panduan/faq')); ?></li>
-					<li class="divider"></li>
-
-					<li class="dropdown-header">Informasi Sistem</li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-hdd"></span> &nbsp; Status Server', array('/halaman/sistem')); ?></li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-saved"></span> &nbsp; Total Transaksi', array('/halaman/sistem/transaksi')); ?></li>
+					<li class="dropdown-header">Telepone / SMS</li>
+					<li><?php echo CHtml::link('<span class="text-danger">line1 : </span> 08212345678', '#'); ?></li>
+					<li><?php echo CHtml::link('<span class="text-success">line2 : </span> 08782345678', '#'); ?></li>
+					<li><?php echo CHtml::link('<span class="text-info">line3 : </span> 08562345678', '#'); ?></li>
 				</ul>
 			</li>
 		</ul>
@@ -238,3 +251,49 @@
         </div>
     </div>
 </footer>
+
+<!--
+<script>
+// Include the UserVoice JavaScript SDK (only needed once on a page)
+UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/iIVRnTLCtFdvKRIXkDaj9A.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+
+//
+// UserVoice Javascript SDK developer documentation:
+// https://www.uservoice.com/o/javascript-sdk
+//
+
+// Set colors
+UserVoice.push(['set', {
+  accent_color: '#6aba2e',
+  trigger_color: 'white',
+  trigger_background_color: '#6aba2e'
+}]);
+
+// Identify the user and pass traits
+// To enable, replace sample data with actual user traits and uncomment the line
+UserVoice.push(['identify', {
+  //email:      'john.doe@example.com', // User’s email address
+  //name:       'John Doe', // User’s real name
+  //created_at: 1364406966, // Unix timestamp for the date the user signed up
+  //id:         123, // Optional: Unique id of the user (if set, this should not change)
+  //type:       'Owner', // Optional: segment your users by type
+  //account: {
+  //  id:           123, // Optional: associate multiple users with a single account
+  //  name:         'Acme, Co.', // Account name
+  //  created_at:   1364406966, // Unix timestamp for the date the account was created
+  //  monthly_rate: 9.99, // Decimal; monthly rate of the account
+  //  ltv:          1495.00, // Decimal; lifetime value of the account
+  //  plan:         'Enhanced' // Plan name for the account
+  //}
+}]);
+
+// Add default trigger to the bottom-right corner of the window:
+UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+
+// Or, use your own custom trigger:
+//UserVoice.push(['addTrigger', '#id', { mode: 'contact' }]);
+
+// Autoprompt for Satisfaction and SmartVote (only displayed under certain conditions)
+UserVoice.push(['autoprompt', {}]);
+</script>
+-->
