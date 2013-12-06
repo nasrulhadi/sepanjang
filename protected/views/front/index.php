@@ -20,8 +20,11 @@
 					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-gift"></span> &nbsp; Total Donasi', array('/halaman/donasi')); ?></li>
 					<li class="divider"></li>
 
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-transfer"></span> &nbsp; Semua Order', array('/halaman/order/semua')); ?></li>
+					<li class="divider"></li>
+
 					<li class="dropdown-header">Panduan Pembelian</li>
-					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-tag"></span> &nbsp; Panduan', array('/halaman/panduan')); ?></li>
+					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-tag"></span> &nbsp; Langkah - Langkah', array('/halaman/panduan')); ?></li>
 					<li><?php echo CHtml::link('<span class="glyphicon glyphicon-tags"></span> &nbsp; Pertanyaan Umum', array('/halaman/panduan/faq')); ?></li>
 					<li class="divider"></li>
 
@@ -50,6 +53,10 @@
 					<li><?php echo CHtml::link('<span class="text-danger">line1 : </span> 08212345678', '#'); ?></li>
 					<li><?php echo CHtml::link('<span class="text-success">line2 : </span> 08782345678', '#'); ?></li>
 					<li><?php echo CHtml::link('<span class="text-info">line3 : </span> 08562345678', '#'); ?></li>
+					<li class="divider"></li>
+
+					<li class="dropdown-header">Email</li>
+					<li><?php echo CHtml::link('hallo@arekpulsa.com', 'mailto:hallo@arekpulsa.com'); ?></li>
 				</ul>
 			</li>
 		</ul>
