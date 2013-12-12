@@ -1,24 +1,19 @@
 <?php
 
 /**
- * This is the model class for table "denom".
+ * This is the model class for table "nourut".
  *
- * The followings are the available columns in table 'denom':
- * @property integer $dnm_id
- * @property integer $opt_id
- * @property string $opt_code
- * @property integer $dnm_nominal
- * @property integer $dnm_price
- * @property string $dnm_date
+ * The followings are the available columns in table 'nourut':
+ * @property integer $idurut
  */
-class Denom extends CActiveRecord
+class Nourut extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'denom';
+		return 'nourut';
 	}
 
 	/**
@@ -29,12 +24,11 @@ class Denom extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('opt_id, opt_code, dnm_nominal, dnm_price, dnm_date', 'required'),
-			array('opt_id, dnm_nominal, dnm_price', 'numerical', 'integerOnly'=>true),
-			array('opt_code', 'length', 'max'=>10),
+			array('idurut', 'required'),
+			array('idurut', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('dnm_id, opt_id, opt_code, dnm_nominal, dnm_price, dnm_date', 'safe', 'on'=>'search'),
+			array('idurut', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,12 +49,7 @@ class Denom extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'dnm_id' => 'Dnm',
-			'opt_id' => 'Opt',
-			'opt_code' => 'Opt Code',
-			'dnm_nominal' => 'Dnm Nominal',
-			'dnm_price' => 'Dnm Price',
-			'dnm_date' => 'Dnm Date',
+			'idurut' => 'Idurut',
 		);
 	}
 
@@ -82,12 +71,7 @@ class Denom extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('dnm_id',$this->dnm_id);
-		$criteria->compare('opt_id',$this->opt_id);
-		$criteria->compare('opt_code',$this->opt_code,true);
-		$criteria->compare('dnm_nominal',$this->dnm_nominal);
-		$criteria->compare('dnm_price',$this->dnm_price);
-		$criteria->compare('dnm_date',$this->dnm_date,true);
+		$criteria->compare('idurut',$this->idurut);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -98,10 +82,42 @@ class Denom extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Denom the static model class
+	 * @return Nourut the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
+	}
+
+
+	public function getRandom()
+	{
+		$random = mt_rand(32, 128);
+
+		$sql = "SELECT LPAD(CONVERT(MIN(n.idurut), CHAR(2)),2,'0') as ANGKA 
+				FROM `order` o 
+				RIGHT OUTER JOIN nourut n on LPAD(n.idurut,2,'0') = RIGHT(CONVERT(o.ord_bayar, CHAR(6)),2) AND o.ord_status IN('waiting','sukses','proses','refund') where 1 AND RIGHT(CONVERT(o.ord_bayar, CHAR(6)),2) is NULL";
+		$connection = Yii::app()->db;
+
+		$command = $connection->createCommand($sql);
+		$result = $command->queryAll();
+		foreach ($result as $key) {
+			$random = $key["ANGKA"];
+		}
+
+		return $random;
+	}
+
+	public function enHash($int)
+	{
+		$random1 = mt_rand(111, 511);
+		$random2 = mt_rand(11, 99);
+
+		return $random1.$int.$random2;
+	}
+
+	public function deHash($int)
+	{
+		return substr($int, 3, -2);
 	}
 }

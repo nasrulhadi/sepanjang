@@ -5,6 +5,7 @@
  *
  * The followings are the available columns in table 'order':
  * @property integer $ord_id
+ * @property integer $opt_id
  * @property string $opt_code
  * @property integer $dnm_nominal
  * @property string $ord_dest
@@ -32,8 +33,8 @@ class Order extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_desc', 'required'),
-			array('dnm_nominal, ord_bayar', 'numerical', 'integerOnly'=>true),
+			array('opt_id, opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_desc', 'required'),
+			array('opt_id, dnm_nominal, ord_bayar', 'numerical', 'integerOnly'=>true),
 			array('opt_code', 'length', 'max'=>10),
 			array('ord_dest', 'length', 'max'=>19),
 			array('ord_bank', 'length', 'max'=>20),
@@ -41,7 +42,7 @@ class Order extends CActiveRecord
 			array('ord_status', 'length', 'max'=>7),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('ord_id, opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_desc, ord_status', 'safe', 'on'=>'search'),
+			array('ord_id, opt_id, opt_code, dnm_nominal, ord_dest, ord_date, ord_bayar, ord_bank, ord_desc, ord_status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -63,6 +64,7 @@ class Order extends CActiveRecord
 	{
 		return array(
 			'ord_id' => 'Ord',
+			'opt_id' => 'Opt',
 			'opt_code' => 'Opt Code',
 			'dnm_nominal' => 'Dnm Nominal',
 			'ord_dest' => 'Ord Dest',
@@ -93,6 +95,7 @@ class Order extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('ord_id',$this->ord_id);
+		$criteria->compare('opt_id',$this->opt_id);
 		$criteria->compare('opt_code',$this->opt_code,true);
 		$criteria->compare('dnm_nominal',$this->dnm_nominal);
 		$criteria->compare('ord_dest',$this->ord_dest,true);

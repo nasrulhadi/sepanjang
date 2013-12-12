@@ -7,23 +7,26 @@ class NodeController extends Controller
 
 	public function actionIndex()
 	{
+		// redirect ganti sesion
 		$this->redirect(array('/go/home'));
 	}
 
 	public function actionGetprovider()
 	{
+		// cari operator by kategori
 		$criteria=new CDbCriteria;
 	   	$criteria->condition = 'ktg_id = :ktgid AND opt_status = :status';
 	   	$criteria->params = array(':ktgid' => $_POST['ktgId'], ':status' => 'lancar');
 	   	$criteria->order = 'opt_name ASC';
-
 		$model = Operator::model()->findAll($criteria);
 
-		$listdata = CHtml::listData($model, 'opt_code', 'opt_name');
+		// convert hasil pencarian ke listdata
+		$listdata = CHtml::listData($model, 'opt_id', 'opt_name');
         echo CHtml::tag('option', array('value' => ''), CHtml::encode("- Pilih Provider -"), true);
         
+        // tampilkan hasil request
         foreach ($listdata as $value => $name) {
-        	$cariDenom = Denom::model()->findAll('opt_code = "'.$value.'"');
+        	$cariDenom = Denom::model()->findAll('opt_id = "'.$value.'"');
         	if(count($cariDenom) > 0){
         		echo CHtml::tag('option', array('value' => $value), CHtml::encode($name), true);
         	}
@@ -32,21 +35,24 @@ class NodeController extends Controller
 
 	public function actionGetnominal()
 	{
+		// cari denom by operator id
 		$criteria=new CDbCriteria;
-	   	$criteria->condition = 'opt_code = :pvdid';
+	   	$criteria->condition = 'opt_id = :pvdid';
 	   	$criteria->params = array(':pvdid' => $_POST['pvdId']);
 	   	$criteria->order = 'dnm_nominal ASC';
-
 		$model = Denom::model()->findAll($criteria);
-		$random = mt_rand(32, 128);
+
+		// generate random (thanks sarip)
+		$random = Nourut::getRandom();
 		
+		// tampilkan hasil request
         echo CHtml::tag('option', array('value' => ''), CHtml::encode("- Pilih Nominal -"), true);
-        
         foreach ($model as $result) {
             echo CHtml::tag('option', array('value' => $result->dnm_id."_".($result->dnm_price+$random)), CHtml::encode($result->dnm_nominal." ~> ".($result->dnm_price+$random)), true);
         }
 
-        echo "%".$random * $this->kunciPerkalian;
+        // generate parameter untuk key random
+        echo "%".Nourut::enHash($random);
 	}
 
 	public function actionStep1()
@@ -57,7 +63,7 @@ class NodeController extends Controller
 
 			$splitDenom = explode("_", $_POST['nominal']);
 			$getDenomNominal = Denom::model()->findByPk($splitDenom[0]);
-			$getOperator = Operator::model()->findByAttributes(array('opt_code' => $_POST['provider']));
+			$getOperator = Operator::model()->findByPk($_POST['provider']);
 			$getKategori = Kategori::model()->findByPk($_POST['kategori']);
 
 			// cari . di nomor tlp
@@ -72,10 +78,11 @@ class NodeController extends Controller
 			}
 
 			// re get keyhash
-			$random = $_POST['keyhash'] / $this->kunciPerkalian;
+			$random = Nourut::deHash($_POST['keyhash']);
 
 			// simpan order
 			$order = new Order;
+			$order->opt_id = $getOperator->opt_id;
 			$order->opt_code = $getOperator->opt_code;
 			$order->dnm_nominal	 = $getDenomNominal->dnm_nominal;
 			$order->ord_dest = $nomor;
@@ -110,7 +117,6 @@ class NodeController extends Controller
 					 "waiting";
 			} else {
 				echo "error1";
-				//print_r($order->getErrors());
 			}
 		} else {
 			echo "error2";
@@ -149,7 +155,7 @@ class NodeController extends Controller
 
 			if(count($getOrder) > 0){
 				
-				$getOperator = Operator::model()->findByAttributes(array('opt_code' => $getOrder->opt_code));
+				$getOperator = Operator::model()->findByAttributes(array('opt_id' => $getOrder->opt_id));
 				$getKategori = Kategori::model()->findByPk($getOperator->ktg_id);
 
 				/* 
@@ -191,7 +197,7 @@ class NodeController extends Controller
 		$i = 0;
 		foreach($getOrder as $result)
 		{
-		    $getProduk = Operator::model()->findByAttributes(array('opt_code' => $result->opt_code));
+		    $getProduk = Operator::model()->findByAttributes(array('opt_id' => $result->opt_id));
 
 		    $listdata[$i]['ord_id'] = $result->ord_id;
 		    $listdata[$i]['ord_date'] = MyFormatter::formatDateNoYear($result->ord_date);

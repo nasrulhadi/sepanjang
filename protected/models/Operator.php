@@ -4,7 +4,9 @@
  * This is the model class for table "operator".
  *
  * The followings are the available columns in table 'operator':
+ * @property integer $opt_id
  * @property string $opt_code
+ * @property integer $ktg_id
  * @property string $opt_name
  * @property string $opt_status
  */
@@ -26,13 +28,14 @@ class Operator extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('opt_code, opt_name', 'required'),
+			array('opt_code, ktg_id, opt_name', 'required'),
+			array('ktg_id', 'numerical', 'integerOnly'=>true),
 			array('opt_code', 'length', 'max'=>5),
 			array('opt_name', 'length', 'max'=>30),
 			array('opt_status', 'length', 'max'=>8),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('opt_code, opt_name, opt_status', 'safe', 'on'=>'search'),
+			array('opt_id, opt_code, ktg_id, opt_name, opt_status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,7 +56,9 @@ class Operator extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
+			'opt_id' => 'Opt',
 			'opt_code' => 'Opt Code',
+			'ktg_id' => 'Ktg',
 			'opt_name' => 'Opt Name',
 			'opt_status' => 'Opt Status',
 		);
@@ -77,7 +82,9 @@ class Operator extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
+		$criteria->compare('opt_id',$this->opt_id);
 		$criteria->compare('opt_code',$this->opt_code,true);
+		$criteria->compare('ktg_id',$this->ktg_id);
 		$criteria->compare('opt_name',$this->opt_name,true);
 		$criteria->compare('opt_status',$this->opt_status,true);
 
