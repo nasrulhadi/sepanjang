@@ -14,7 +14,7 @@ $(document).ready(function(){
         [
             <?php
             foreach ($getBg as $result) {
-            echo '"/sepanjang/images/background/'.$result->bg_image.'",
+            echo '"'.Yii::app()->baseUrl.'/images/background/'.$result->bg_image.'",
             ';
             }
             ?>  
