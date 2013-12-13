@@ -19,7 +19,7 @@ $(document).ready(function(){
             }
             ?>  
         ], 
-        {duration: 300000, centeredX: true, centeredY: true}
+        {duration: 300000, centeredX: true, centeredY: true, fade: 700}
     );
 
     var photos = [ 
