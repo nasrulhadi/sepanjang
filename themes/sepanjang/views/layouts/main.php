@@ -33,8 +33,9 @@
         <?php
         if(!Yii::app()->errorHandler->error) {
         ?>
-        <div id="headerimg1" class="headerimg"></div>
-        <div id="headerimg2" class="headerimg"></div>
+        <div class="bg_front"></div>
+        <!-- <div id="headerimg1" class="headerimg"></div>
+        <div id="headerimg2" class="headerimg"></div> -->
         <?php
         }
 
@@ -96,6 +97,7 @@
         <script src="<?php echo $baseUrl; ?>/js/jquery-ui.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/jquery-migrate.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/jquery.actual.min.js"></script>
+        <script src="<?php echo $baseUrl; ?>/js/jquery.backstretch.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/button.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/modal.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/tooltip.js"></script>
@@ -105,7 +107,7 @@
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>
         <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
-        <script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>
+        <!--<script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>-->
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
         <?php 
         if($this->action->id == "semua") { 

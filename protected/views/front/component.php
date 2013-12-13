@@ -1,6 +1,73 @@
 <?php Header("Content-Type: application/x-javascript; charset=UTF-8"); ?>
 
 $(document).ready(function(){
+
+    <?php
+    $criteria = new CDbCriteria;
+    $criteria->order = 'rand()';
+    $criteria->limit = '5';
+    $getBg = Background::model()->findAll($criteria);
+    ?>
+
+    // slide bg front
+    $.backstretch(
+        [
+            <?php
+            foreach ($getBg as $result) {
+            echo '"/sepanjang/images/background/'.$result->bg_image.'",
+            ';
+            }
+            ?>  
+        ], 
+        {duration: 300000, centeredX: true, centeredY: true}
+    );
+
+    var photos = [ 
+        <?php
+        foreach ($getBg as $result) {
+            echo '
+            {"author" : "'.$result->bg_author.'",
+            "image" : "'.$result->bg_image.'",
+            "title" : "'.$result->bg_title.'",
+            "imageFrom" : "'.$result->bg_from.'"
+            },
+            ';
+        }
+        ?>
+    ];
+    
+    $("#next").click(function() {
+        var urut = $("body").data("backstretch").index;
+        if(urut == photos.length -1){
+            var hitung = 0;
+        }else{
+            var hitung = urut+1;
+        }
+        var infoArray = photos[hitung];        
+        var infoNext = infoArray.title + "<br> <em> @ " + infoArray.author + " / " + infoArray.imageFrom + " </em>";
+        $(".get-popover-bg").attr('data-content',infoNext);
+        $.backstretch("next");
+    });
+
+    $("#back").click(function() {
+        var urut = $("body").data("backstretch").index;
+        if(urut == 0){
+            var hitung = urut+1;
+        }else{
+            var hitung = urut-1;
+        }
+        var infoArray = photos[hitung];        
+        var infoNext = infoArray.title + "<br> <em> @ " + infoArray.author + " / " + infoArray.imageFrom + " </em>";
+        $(".get-popover-bg").attr('data-content',infoNext);
+        $.backstretch("prev");
+    });
+
+    if($("body").data("backstretch").index == 0){
+        var infoArray = photos[0]; 
+        var infoNext = infoArray.title + "<br> <em> @ " + infoArray.author + " / " + infoArray.imageFrom + " </em>";
+        $(".get-popover-bg").attr('data-content',infoNext);
+    }
+
     
     // select voucher
     $('.form-input-voucher').change(function(){
