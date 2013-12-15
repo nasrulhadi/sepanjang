@@ -6,6 +6,10 @@
         <meta name="author" content="<?php echo json_decode(Options::GetOptions("meta_author"))->{"value"}; ?>">
         <meta name="keywords" content="<?php echo json_decode(Options::GetOptions("meta_keywords"))->{"value"}; ?>">
         <meta name="description" content="<?php echo json_decode(Options::GetOptions("meta_description"))->{"value"}; ?>">
+        <?php
+        $cs=Yii::app()->clientScript;
+        $cs->scriptMap=array('jquery.js'=>false, 'jquery.ui.js' => false);
+        ?>
 
         <title><?php echo json_decode(Options::GetOptions("page_title"))->{"value"}; ?></title>
 
@@ -104,7 +108,7 @@
         <script src="<?php echo $baseUrl; ?>/js/bootstrap.min.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>
-        <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
+        <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
         <?php 
         if($this->action->id == "semua") { 
