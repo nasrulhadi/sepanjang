@@ -14,11 +14,11 @@
         <link rel="shortcut icon" href="<?php echo $baseUrl; ?>/img/favicon.png">
 
         <!-- css -->
-        <link href="<?php echo $baseUrl; ?>/css/bootstrap.css" rel="stylesheet">
+        <link href="<?php echo $baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal.css" rel="stylesheet" />
         <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/redmond/jquery-ui.custom.css" rel="stylesheet" />
-        <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/metro/blue/jtable.css" rel="stylesheet" />
+        <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/metro/blue/jtable.min.css" rel="stylesheet" />
 
         <!-- custom -->
         <link href="<?php echo $baseUrl; ?>/css/style.css" rel="stylesheet">
