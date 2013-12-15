@@ -5,7 +5,7 @@ $(document).ready(function(){
     <?php
     $criteria = new CDbCriteria;
     $criteria->order = 'rand()';
-    $criteria->limit = '5';
+    $criteria->limit = '4';
     $getBg = Background::model()->findAll($criteria);
     ?>
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
             }
             ?>  
         ], 
-        {duration: 300000, centeredX: true, centeredY: true, fade: 700}
+        {duration: 150000, centeredX: true, centeredY: true, fade: 800}
     );
 
     var photos = [ 

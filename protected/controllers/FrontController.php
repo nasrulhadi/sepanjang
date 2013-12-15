@@ -12,10 +12,4 @@ class FrontController extends Controller
 		$this->layout = '//layouts/blankLayout';
 		$this->render('component');
 	}
-
-	public function actionSlideImage()
-	{
-		$this->layout = '//layouts/blankLayout';
-		$this->render('slide');
-	}
 }

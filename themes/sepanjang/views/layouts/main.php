@@ -34,8 +34,6 @@
         if(!Yii::app()->errorHandler->error) {
         ?>
         <div class="bg_front"></div>
-        <!-- <div id="headerimg1" class="headerimg"></div>
-        <div id="headerimg2" class="headerimg"></div> -->
         <?php
         }
 
@@ -107,7 +105,6 @@
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>
         <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.js"></script>
-        <!--<script src="<?php echo Yii::app()->baseUrl; ?>/front/slideImage"></script>-->
         <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
         <?php 
         if($this->action->id == "semua") { 
