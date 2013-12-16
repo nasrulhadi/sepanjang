@@ -109,7 +109,7 @@
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modalmanager.js"></script>
         <script src="<?php echo $baseUrl; ?>/js/bootstrap-modal.js"></script>
         <script src="<?php echo $baseUrl; ?>/lib/jtable/jquery.jtable.min.js"></script>
-        <script src="<?php echo Yii::app()->baseUrl; ?>/front/component"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/front/component?<?php echo time(); ?>"></script>
         <?php 
         if($this->action->id == "semua") { 
             echo "<script>setInterval(function(){ $('#listAllOrder').jtable('load')},30000);</script>"; 

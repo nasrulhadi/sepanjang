@@ -44,11 +44,19 @@ class NodeController extends Controller
 
 		// generate random (thanks sarip)
 		$random = Nourut::getRandom();
+
+		// ambil donasi + laba
+		$donasi = json_decode(Options::GetOptions("donasi"))->{"value"};
+		$laba = json_decode(Options::GetOptions("laba"))->{"value"};
+
+		// tambahkan ke harga 
+		$labaJual = $laba + $donasi + $random;
+
 		
 		// tampilkan hasil request
         echo CHtml::tag('option', array('value' => ''), CHtml::encode("- Pilih Nominal -"), true);
         foreach ($model as $result) {
-            echo CHtml::tag('option', array('value' => $result->dnm_id."_".($result->dnm_price+$random)), CHtml::encode($result->dnm_nominal." ~> ".($result->dnm_price+$random)), true);
+            echo CHtml::tag('option', array('value' => $result->dnm_id."_".($result->dnm_price+$labaJual)), CHtml::encode($result->dnm_nominal." ~> ".($result->dnm_price+$labaJual)), true);
         }
 
         // generate parameter untuk key random
@@ -80,6 +88,13 @@ class NodeController extends Controller
 			// re get keyhash
 			$random = Nourut::deHash($_POST['keyhash']);
 
+			// ambil donasi + laba
+			$donasi = json_decode(Options::GetOptions("donasi"))->{"value"};
+			$laba = json_decode(Options::GetOptions("laba"))->{"value"};
+
+			// tambahkan ke harga 
+			$labaJual = $laba + $donasi + $random;
+
 			// simpan order
 			$order = new Order;
 			$order->opt_id = $getOperator->opt_id;
@@ -87,7 +102,7 @@ class NodeController extends Controller
 			$order->dnm_nominal	 = $getDenomNominal->dnm_nominal;
 			$order->ord_dest = $nomor;
 			$order->ord_date = date("Y-m-d H:i:s");
-			$order->ord_bayar = $getDenomNominal->dnm_price + $random;
+			$order->ord_bayar = $getDenomNominal->dnm_price + $labaJual;
 			$order->ord_bank = $_POST['bank'];
 			$order->ord_desc = $desc;
 			$order->ord_status = "waiting";
@@ -108,7 +123,7 @@ class NodeController extends Controller
 
 				echo $order->ord_id."_".
 					 MyFormatter::rupiah($getDenomNominal->dnm_nominal)."_".
-					 ($getDenomNominal->dnm_price + $random)."_".
+					 ($getDenomNominal->dnm_price + $labaJual)."_".
 					 $getOperator->opt_name."_".
 					 $nomor."_".
 					 $getKategori->ktg_nama."_".
