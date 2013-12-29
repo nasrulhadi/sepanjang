@@ -239,13 +239,14 @@
 				<div class="clearfix"></div>
 				<hr>
 				<div class="clearfix"></div>
-				<div class="chat-sms">
+				<div class="chat-yahoo">
 					<div class="chat-img-yahoo">
 						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/chat-with-us-yahoo-messenger.jpg">
 					</div>
 					<div class="chat-konten-sms ">
 						<ul class="list-unstyled list-inline">
 						<?php
+						$yahoo_mess = json_decode(Options::GetOptions("yahoo"), true);
 						foreach ($yahoo_mess as $result) {
 							echo '<li class="ym-help"><div class="ym-nama inline">'.$result['keterangan'].'</div> &nbsp; <a href="ymsgr:sendIM?'.$result['value'].'"><img src="http://opi.yahoo.com/online?u='.$result['value'].'&amp;m=g&amp;t=1&amp;l=us" alt="'.$result['value'].'"/></a></li>';
 						}

@@ -53,6 +53,7 @@ html, body { height:100%; }
 .form-control { font-size: 13px; border-radius: 3px; }
 a.help-center:focus, a.help-center:hover { outline: none; outline: none; outline-offset: none; }
 .chat-sms { width: 100%; height: 60px}
+.chat-yahoo { width: 100%; height: 60px; margin-bottom: 10px;}
 .chat-img-sms { float: left; width: 200px; padding-top: 19px; }
 .chat-img-yahoo { float: left; width: 200px; padding-top: 22px; }
 .chat-konten-sms { float: left; width: 250px; }
