@@ -36,29 +36,10 @@
 			</li>
 		</ul>
 		<ul class="nav navbar-nav navbar-right hidden-xs">
-			<li class="dropdown mb-20">
-				<a href="#" class="dropdown-toggle geser-kiri-40" data-toggle="dropdown">
-					<span class="glyphicon glyphicon-comment"></span> &nbsp; Bisa Dibantu ? <b class="caret"></b>
+			<li class="mb-20">
+				<a href="#tampilkan-help" id="helpCenter" class="help-center geser-kiri-40" data-toggle="modal">
+					<span class="glyphicon glyphicon-comment"></span> &nbsp; Bisa Dibantu ?
 				</a>
-				<ul class="dropdown-menu">
-					<li class="dropdown-header">Yahoo! Messenger</li>
-					<?php
-					$yahoo_mess = json_decode(Options::GetOptions("yahoo"), true);
-					foreach ($yahoo_mess as $result) {
-						echo '<li><a href="ymsgr:sendIM?'.$result['value'].'"><img src="http://opi.yahoo.com/online?u='.$result['value'].'&amp;m=g&amp;t=1&amp;l=us" alt="'.$result['value'].'"/> &nbsp; '.$result['keterangan'].'</a></li>';
-					}
-					?>
-					<li class="divider"></li>
-
-					<li class="dropdown-header">Telepone / SMS</li>
-					<li><?php echo CHtml::link('<span class="text-danger">line1 : </span> 08212345678', '#'); ?></li>
-					<li><?php echo CHtml::link('<span class="text-success">line2 : </span> 08782345678', '#'); ?></li>
-					<li><?php echo CHtml::link('<span class="text-info">line3 : </span> 08562345678', '#'); ?></li>
-					<li class="divider"></li>
-
-					<li class="dropdown-header">Email</li>
-					<li><?php echo CHtml::link('hallo@arekpulsa.com', 'mailto:hallo@arekpulsa.com'); ?></li>
-				</ul>
 			</li>
 		</ul>
 	</div>
@@ -242,6 +223,36 @@
 			</div>
 			<div class="modal-footer">
 				<a href="<?php echo Yii::app()->baseUrl."/go/home"; ?>" class="btn btn-danger">Halaman Depan</a>
+			</div>
+		</div>
+
+		<div id="tampilkan-help" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
+			<div class="modal-body">
+				<div class="chat-sms">
+					<div class="chat-img-sms">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/chat-with-us-sms-messenger.jpg">
+					</div>
+					<div class="chat-konten-sms tebal">
+						<h2>0878-5277-3907</h2>
+					</div>	
+				</div>
+				<div class="clearfix"></div>
+				<hr>
+				<div class="clearfix"></div>
+				<div class="chat-sms">
+					<div class="chat-img-yahoo">
+						<img src="<?php echo Yii::app()->theme->baseUrl; ?>/img/chat-with-us-yahoo-messenger.jpg">
+					</div>
+					<div class="chat-konten-sms ">
+						<ul class="list-unstyled list-inline">
+						<?php
+						foreach ($yahoo_mess as $result) {
+							echo '<li class="ym-help"><div class="ym-nama inline">'.$result['keterangan'].'</div> &nbsp; <a href="ymsgr:sendIM?'.$result['value'].'"><img src="http://opi.yahoo.com/online?u='.$result['value'].'&amp;m=g&amp;t=1&amp;l=us" alt="'.$result['value'].'"/></a></li>';
+						}
+						?>
+						</ul>
+					</div>	
+				</div>
 			</div>
 		</div>
 

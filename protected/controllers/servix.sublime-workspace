@@ -1,0 +1,1503 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"NO",
+				"NO_IDENTITAS"
+			],
+			[
+				"req",
+				"required"
+			],
+			[
+				"laba",
+				"labaJual"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"ran",
+				"random"
+			],
+			[
+				"dnm_",
+				"dnm_price"
+			],
+			[
+				"get",
+				"getDenomNominal"
+			],
+			[
+				"findBy",
+				"findByAttributes"
+			],
+			[
+				"ke",
+				"keyhash"
+			],
+			[
+				"_",
+				"_POST"
+			],
+			[
+				"key",
+				"keylife"
+			],
+			[
+				"to",
+				"totalDonasi"
+			],
+			[
+				"tra",
+				"transaksiSukses"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"order",
+				"orderId"
+			],
+			[
+				"or",
+				"orderId"
+			],
+			[
+				"kn",
+				"knf_date"
+			],
+			[
+				"fo",
+				"form"
+			],
+			[
+				"ta",
+				"tanggal"
+			],
+			[
+				"th",
+				"this"
+			],
+			[
+				"ord",
+				"ord_id"
+			],
+			[
+				"ce",
+				"cekorder"
+			],
+			[
+				"attr",
+				"attribute"
+			],
+			[
+				"car",
+				"cariTitik"
+			],
+			[
+				"ge",
+				"getProduk"
+			],
+			[
+				"ktg_",
+				"ktg_nama"
+			],
+			[
+				"kt",
+				"ktg_id"
+			],
+			[
+				"ktg",
+				"ktg_id"
+			],
+			[
+				"dateT",
+				"formatDateTimeFormat"
+			],
+			[
+				"el",
+				"else"
+			],
+			[
+				"fin",
+				"findByAttributes"
+			],
+			[
+				"sc",
+				"script"
+			],
+			[
+				"b",
+				"inline-block"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"opt",
+				"opt_code"
+			],
+			[
+				"Se",
+				"Server"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"page",
+				"page-logo"
+			],
+			[
+				"array",
+				"array"
+			],
+			[
+				"co",
+				"content"
+			],
+			[
+				"ec",
+				"echo"
+			],
+			[
+				"Bac",
+				"background"
+			],
+			[
+				"find",
+				"findByPk"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"form-b",
+				"form-bank-detail-update"
+			],
+			[
+				"fr-b",
+				"form-bank-detail-update"
+			],
+			[
+				"ca",
+				"cariDenom"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"dnm",
+				"dnm_nominal"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"base",
+				"baseUrl"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"yah",
+				"yahoo_mess"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"sys",
+				"sys_status"
+			],
+			[
+				"data",
+				"dataPegawai"
+			],
+			[
+				"dat",
+				"dataPegawai"
+			],
+			[
+				"sta",
+				"statusSPJ"
+			],
+			[
+				"skpd",
+				"stream_bucket_prepend"
+			],
+			[
+				"ID",
+				"ID_PEGAWAI"
+			],
+			[
+				"lis",
+				"listdata"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"pega",
+				"pegawaiSekretaris"
+			],
+			[
+				"UP",
+				"updatePegawaiLama"
+			],
+			[
+				"up",
+				"updatePegawaiLama"
+			],
+			[
+				"Pen",
+				"penutup"
+			],
+			[
+				"str",
+				"strtolower"
+			],
+			[
+				"uc",
+				"ucwords"
+			],
+			[
+				"peng",
+				"penggunaAnggaran"
+			],
+			[
+				"kota",
+				"kotaBerangkat"
+			],
+			[
+				"id_u",
+				"ID_USER_PENERIMA"
+			],
+			[
+				"SPT",
+				"sptPengikut"
+			],
+			[
+				"TANG",
+				"TANGGAL_DITETAPKAN"
+			],
+			[
+				"iD",
+				"iDPROPINSI"
+			],
+			[
+				"ID_KO",
+				"ID_KOTA_BERANGKAT"
+			],
+			[
+				"sp",
+				"sptPengikut"
+			],
+			[
+				"spp",
+				"sppdPengikut"
+			],
+			[
+				"pe",
+				"pengikut"
+			],
+			[
+				"resul",
+				"resultSppd"
+			],
+			[
+				"TANGG",
+				"TANGGAL_BERANGKAT"
+			],
+			[
+				"mode",
+				"model"
+			],
+			[
+				"ben",
+				"bendahara"
+			],
+			[
+				"tgl",
+				"tglBerangkat"
+			],
+			[
+				"strt",
+				"strtotime"
+			],
+			[
+				"PER",
+				"PERIHAL"
+			],
+			[
+				"KETERANG",
+				"KETERANGAN_JABATAN"
+			],
+			[
+				"mata",
+				"mataAnggaran"
+			],
+			[
+				"peg",
+				"pegawaiPengguna"
+			],
+			[
+				"Penggu",
+				"penggunaAnggaran"
+			],
+			[
+				"KETERA",
+				"KETERANGAN_JABATAN"
+			],
+			[
+				"ID_",
+				"ID_SPPD"
+			],
+			[
+				"lama",
+				"lamahari"
+			],
+			[
+				"PEGA",
+				"pegawaiPenerima"
+			],
+			[
+				"con",
+				"condition"
+			],
+			[
+				"da",
+				"data2"
+			],
+			[
+				"per",
+				"perihalBerikutnya"
+			],
+			[
+				"tu",
+				"tugasBerikutnya"
+			],
+			[
+				"tg",
+				"tglKembali"
+			],
+			[
+				"cek",
+				"cekStatus"
+			],
+			[
+				"ID_RE",
+				"ID_REKAP_PAGU"
+			],
+			[
+				"rut",
+				"rute"
+			],
+			[
+				"nip",
+				"nipKepada"
+			],
+			[
+				"id",
+				"idSkpd"
+			],
+			[
+				"ni",
+				"nipDari"
+			],
+			[
+				"aCT",
+				"action"
+			],
+			[
+				"SP",
+				"spt"
+			],
+			[
+				"actio",
+				"action"
+			],
+			[
+				"IDK",
+				"ID_KODE_STATUS"
+			],
+			[
+				"Kode",
+				"kodeStatus"
+			],
+			[
+				"KOTA",
+				"kotaTujuan"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"KELAS",
+				"kelas_keberangkatan"
+			],
+			[
+				"telaa",
+				"telaah_staf"
+			],
+			[
+				"ID_PRO",
+				"ID_PROPINSI_KE"
+			],
+			[
+				"count",
+				"countSppdByTotal"
+			],
+			[
+				"countS",
+				"countSppdBySpt"
+			],
+			[
+				"kdRe",
+				"kdRek5"
+			],
+			[
+				"kd",
+				"kdRek2"
+			],
+			[
+				"idP",
+				"idProg"
+			],
+			[
+				"sub",
+				"subKegiatan"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/cervix/index.php",
+			"settings":
+			{
+				"buffer_size": 514,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/protected/config/main.php",
+			"settings":
+			{
+				"buffer_size": 2275,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/themes/cervix/views/layouts/main.php",
+			"settings":
+			{
+				"buffer_size": 1289,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/var/www/cervix/themes/cervix/js/custom.js",
+			"settings":
+			{
+				"buffer_size": 822,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/protected/views/front/index.php",
+			"settings":
+			{
+				"buffer_size": 798,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/protected/modules/form/controllers/DefaultController.php",
+			"settings":
+			{
+				"buffer_size": 121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/protected/modules/form/controllers/DaftarController.php",
+			"settings":
+			{
+				"buffer_size": 381,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/protected/modules/form/views/daftar/satu.php",
+			"settings":
+			{
+				"buffer_size": 6046,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/themes/cervix/css/style.css",
+			"settings":
+			{
+				"buffer_size": 350,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/cervix/protected/models/Peserta.php",
+			"settings":
+			{
+				"buffer_size": 3693,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 92.0,
+		"selected_items":
+		[
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"w",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"we",
+				"Word Wrap: Toggle"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/cervix/.htaccess",
+		"/var/www/cervix/protected/modules/form/views/default/index.php",
+		"/var/www/cervix/index-test.php",
+		"/var/www/sepanjang/protected/models/Nourut.php",
+		"/var/www/sepanjang/protected/controllers/FrontController.php",
+		"/var/www/sepanjang/themes/sepanjang/css/bootstrap.css",
+		"/var/www/sepanjang/themes/sepanjang/css/bootstrap-modal.css",
+		"/var/www/sepanjang/themes/sepanjang/lib/jtable/themes/redmond/jquery-ui.custom.css",
+		"/var/www/sepanjang/themes/sepanjang/lib/jtable/jquery.jtable.js",
+		"/var/www/sepanjang/themes/sepanjang/js/bootstrap-modal.js",
+		"/var/www/sepanjang/themes/sepanjang/js/bootstrap-modalmanager.js",
+		"/var/www/sepanjang/themes/sepanjang/js/transition.js",
+		"/var/www/sepanjang/themes/sepanjang/js/tooltip.js",
+		"/var/www/sepanjang/themes/sepanjang/js/popover.js",
+		"/var/www/sepanjang/themes/sepanjang/js/modal.js",
+		"/var/www/sepanjang/themes/sepanjang/js/button.js",
+		"/var/www/sepanjang/protected/views/front/slide.php",
+		"/var/www/sepanjang/protected/models/Order.php",
+		"/var/www/sepanjang/protected/models/Operator.php",
+		"/var/www/sepanjang/protected/models/Denom.php",
+		"/var/www/sepanjang/protected/views/site/error.php",
+		"/var/www/sepanjang/protected/components/MyFormatter.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/donasi/index.php",
+		"/var/www/sepanjang/themes/sepanjang/server.html",
+		"/var/www/sepanjang/protected/modules/halaman/controllers/KonfirmasiController.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/panduan/index.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/panduan/faq.php",
+		"/var/www/sepanjang/protected/modules/halaman/controllers/PanduanController.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/konfirmasi/struk.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/konfirmasi/index.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/sistem/index.php",
+		"/var/www/sepanjang/protected/modules/halaman/views/sistem/transaksi.php",
+		"/var/www/sepanjang/protected/modules/halaman/controllers/SistemController.php",
+		"/var/www/sepanjang/protected/models/Options.php",
+		"/var/www/sepanjang/protected/modules/halaman/controllers/OrderController.php",
+		"/var/www/sepanjang/protected/controllers/GoController.php",
+		"/var/www/sepanjang/protected/models/Konfirmasi.php",
+		"/var/www/sepanjang/protected/models/ContactForm.php",
+		"/var/www/sepanjang/css/form.css",
+		"/var/www/sepanjang/protected/modules/halaman/views/order/semua.php",
+		"/var/www/sepanjang/themes/sepanjang/lib/jtable/themes/metro/blue/jtable.css",
+		"/var/www/sepanjang/protected/modules/halaman/controllers/DefaultController.php",
+		"/var/www/sepanjang/themes/sepanjang/views/layouts/column1.php",
+		"/var/www/sepanjang/themes/sepanjang/js/component.js",
+		"/var/www/sepanjang/themes/sepanjang/js/slide-image.js",
+		"/var/www/sepanjang/protected/models/System.php",
+		"/var/www/sepanjang/.htaccess",
+		"/var/www/sepanjang/themes/sepanjang/views/site/login.php",
+		"/var/www/onlinepulsa/README.md",
+		"/var/www/simpd/protected/modules/pengaturan/views/akun/view.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/akun/update.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/akun/penyetuju_form.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/akun/index.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/akun/create.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/pegawai/create.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/pegawai/index.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/pegawai/update.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/pegawai/view.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/pindahSKPD/index.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/pindahSKPD/proses.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/profil/update.php",
+		"/var/www/simpd/protected/modules/terbitkanSPT/views/default/index.php",
+		"/var/www/simpd/protected/modules/uangMuka/views/default/index.php",
+		"/var/www/simpd/protected/modules/uangMuka/views/rab/_viewdaftarcetak.php",
+		"/var/www/simpd/protected/modules/pengaturan/views/akun/admin.php",
+		"/var/www/simpd/protected/modules/audit/views/default/index.php",
+		"/var/www/simpd/protected/modules/master/views/default/index.php",
+		"/var/www/simpd/protected/modules/master/views/bendahara/create.php",
+		"/var/www/simpd/protected/modules/master/views/bendahara/index.php",
+		"/var/www/simpd/protected/modules/master/views/bendahara/update.php",
+		"/var/www/simpd/protected/modules/master/views/bendahara/view.php",
+		"/var/www/simpd/protected/modules/master/views/eselon/index.php",
+		"/var/www/simpd/protected/modules/master/views/eselon/update.php",
+		"/var/www/simpd/protected/modules/master/views/eselon/view.php",
+		"/var/www/simpd/protected/modules/master/views/jabatan/create.php",
+		"/var/www/simpd/protected/modules/master/views/jabatan/index.php",
+		"/var/www/simpd/protected/modules/master/views/jabatan/update.php",
+		"/var/www/simpd/protected/modules/master/views/jabatan/view.php",
+		"/var/www/simpd/protected/modules/master/views/kecamatan/create.php",
+		"/var/www/simpd/protected/modules/master/views/kecamatan/index.php",
+		"/var/www/simpd/protected/modules/master/views/kecamatan/update.php",
+		"/var/www/simpd/protected/modules/master/views/kecamatan/view.php",
+		"/var/www/simpd/protected/modules/master/views/kelasPegawai/create.php",
+		"/var/www/simpd/protected/modules/master/views/kelasPegawai/update.php",
+		"/var/www/simpd/protected/modules/master/views/kelasPegawai/view.php",
+		"/var/www/simpd/protected/modules/master/views/kodeStatus/create.php",
+		"/var/www/simpd/protected/modules/master/views/kodeStatus/index.php",
+		"/var/www/simpd/protected/modules/master/views/kodeStatus/view.php",
+		"/var/www/simpd/protected/modules/master/views/kota/index.php",
+		"/var/www/simpd/protected/modules/master/views/kota/view.php",
+		"/var/www/simpd/protected/modules/master/views/maskapai/create.php",
+		"/var/www/simpd/protected/modules/master/views/maskapai/index.php",
+		"/var/www/simpd/protected/modules/master/views/maskapai/update.php",
+		"/var/www/simpd/protected/modules/master/views/maskapai/view.php",
+		"/var/www/simpd/protected/modules/master/views/pangkat/create.php",
+		"/var/www/simpd/protected/modules/master/views/pangkat/index.php",
+		"/var/www/simpd/protected/modules/master/views/pangkat/update.php",
+		"/var/www/simpd/protected/modules/master/views/pangkat/view.php",
+		"/var/www/simpd/protected/modules/master/views/penggunaAnggaran/view.php",
+		"/var/www/simpd/protected/modules/master/views/propinsi/create.php",
+		"/var/www/simpd/protected/modules/master/views/propinsi/index.php",
+		"/var/www/simpd/protected/modules/master/views/propinsi/update.php",
+		"/var/www/simpd/protected/modules/master/views/sekretaris/create.php",
+		"/var/www/simpd/protected/modules/master/views/skpd/view.php",
+		"/var/www/simpd/protected/modules/master/views/skpd/update.php",
+		"/var/www/simpd/protected/modules/master/views/skpd/index.php",
+		"/var/www/simpd/protected/modules/master/views/skpd/create.php",
+		"/var/www/simpd/protected/modules/master/views/kota/create.php",
+		"/var/www/simpd/protected/modules/master/views/kelasPegawai/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/baganSpt/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/cekPegawai/create.php",
+		"/var/www/simpd/protected/modules/informasi/views/cetakLaporan/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/cetakLaporan/view.php",
+		"/var/www/simpd/protected/modules/informasi/views/cetakManifest/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/pegawaiBerangkat/create.php",
+		"/var/www/simpd/protected/modules/informasi/views/pegawaiBerangkat/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/pegawaiSpj/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/perjalananDinas/index.php",
+		"/var/www/simpd/protected/modules/informasi/views/default/index.php",
+		"/var/www/simpd/protected/modules/dashboard/views/spt/index.php",
+		"/var/www/simpd/protected/modules/rencanaPD/RencanaPDModule.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/default/index.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/rencanaTelaah/biayasppd.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/rencanaTelaah/create.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/rencanaTelaah/detailpegawai.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/rencanaTelaah/tambahpenerimasppd.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/rencanaTelaah/update.php",
+		"/var/www/simpd/protected/modules/rencanaPD/views/rencanaTelaah/index.php"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			" <",
+			">\n",
+			"    <",
+			"firstImg",
+			"get-popover-bg",
+			"info-footer",
+			"random",
+			"and",
+			"panduan",
+			"att",
+			"window",
+			"carousel-example-generic",
+			"20",
+			"md-5",
+			"5",
+			"inline-block",
+			"size",
+			"20",
+			"ubahstatus",
+			"ord_dest",
+			")\n",
+			"$t",
+			"PeopleTableContainer",
+			"window.location",
+			"reStatus",
+			"error",
+			"statusOrder",
+			"hiddenField",
+			"$status",
+			"step1.",
+			"Step1",
+			"step1",
+			"tombolStatusOrder",
+			"tombolProses",
+			"$baseUrl",
+			"baseUrl",
+			"app()",
+			"checkController",
+			"$controller",
+			"Controller",
+			"controller",
+			"Controller",
+			"controller",
+			"\n                    $('#statusOrder').text(data);",
+			"tombolCekStatus",
+			"statusOrder",
+			"baseUrl",
+			"ruteAwal",
+			"tombolProses",
+			"				<",
+			"request",
+			"step1",
+			"em",
+			"echo",
+			"provider",
+			" ?>",
+			"home_info_step2",
+			"get",
+			"src=\"",
+			"dynamiccla",
+			"spt/",
+			"spt",
+			"MSSQL",
+			"data",
+			"rekap",
+			"<?=",
+			"$criteria",
+			"criteria",
+			"city",
+			"$listdata = CHtml::listData($data, 'ID_PEGAWAI', 'NAMA');\n        echo CHtml::tag('option', array('value' => 'empty'), CHtml::encode(\"- Pilih -\"), true);\n        \n        foreach ($listdata as $value => $name) {\n            echo CHtml::tag('option', array('value' => $value), CHtml::encode($name), true);\n        }",
+			"Dynamic",
+			"==",
+			"dPenerima",
+			"baiaysppd",
+			"$pegawaiSekretaris",
+			"pegawaiSekretaris",
+			"sekretaris",
+			"indexPenugasan",
+			"index",
+			"pegawaiPindahSKPD",
+			"index",
+			"\"sType\": \"string\"",
+			"cpagu",
+			" accounts ",
+			"$penggunaAnggaran",
+			"id_sppd",
+			"id_sppdNO",
+			"id_sppd",
+			"jml_pengikut",
+			"bendahara",
+			"Bendahara",
+			"terbilang",
+			"criteria",
+			"$sppd",
+			"sppd",
+			"ditetap",
+			"kd_rek_",
+			"row",
+			"print",
+			"<?",
+			"NIP",
+			"ddd",
+			"$criteria",
+			"Criteria",
+			"criteria",
+			"cpa",
+			"\">",
+			"</option>",
+			">",
+			"<option value=",
+			"dataPegawaiSPPD",
+			"cekStatus",
+			"$criteria",
+			"criteria",
+			"Criteria",
+			"criteria",
+			"pagu",
+			"ketKegiatan",
+			"getKegiatan",
+			"ta_blj.",
+			"KD_BIDANG",
+			"hsl",
+			"$hsl->kd_rek_",
+			"kd_r",
+			"and",
+			"crte",
+			"print",
+			"_r"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"echo",
+			"<?php",
+			"`"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 7,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/cervix/index.php",
+					"settings":
+					{
+						"buffer_size": 514,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								49,
+								49
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/cervix/protected/config/main.php",
+					"settings":
+					{
+						"buffer_size": 2275,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1570,
+								1570
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1006.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/var/www/cervix/themes/cervix/views/layouts/main.php",
+					"settings":
+					{
+						"buffer_size": 1289,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1011,
+								1011
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/var/www/cervix/themes/cervix/js/custom.js",
+					"settings":
+					{
+						"buffer_size": 822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								610,
+								610
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/var/www/cervix/protected/views/front/index.php",
+					"settings":
+					{
+						"buffer_size": 798,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/var/www/cervix/protected/modules/form/controllers/DefaultController.php",
+					"settings":
+					{
+						"buffer_size": 121,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								116,
+								116
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/var/www/cervix/protected/modules/form/controllers/DaftarController.php",
+					"settings":
+					{
+						"buffer_size": 381,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								197,
+								197
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/var/www/cervix/protected/modules/form/views/daftar/satu.php",
+					"settings":
+					{
+						"buffer_size": 6046,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								440,
+								440
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/var/www/cervix/themes/cervix/css/style.css",
+					"settings":
+					{
+						"buffer_size": 350,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								347,
+								347
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "/var/www/cervix/protected/models/Peserta.php",
+					"settings":
+					{
+						"buffer_size": 3693,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2148,
+								2148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"go",
+				"protected/controllers/GoController.php"
+			],
+			[
+				"ser",
+				"themes/sepanjang/server.html"
+			],
+			[
+				"serv",
+				"themes/sepanjang/server.html"
+			],
+			[
+				"cetaksppd",
+				"protected/modules/SPJSPPD/controllers/CetakSppdController.php"
+			],
+			[
+				"laporan_ke",
+				"protected/modules/informasi/views/cetakLaporan/laporan_kegiatan.php"
+			],
+			[
+				"penggu",
+				"protected/models/PenggunaAnggaran.php"
+			],
+			[
+				"date",
+				"themes/gebo/js/gebo_datepicker.js"
+			],
+			[
+				"tab",
+				"themes/gebo/js/gebo_tables.js"
+			],
+			[
+				"pengaturan/akun",
+				"protected/modules/pengaturan/views/akun/update.php"
+			],
+			[
+				"pegawai/",
+				"protected/modules/pengaturan/views/pegawai/update.php"
+			],
+			[
+				"propins",
+				"protected/modules/master/views/propinsi/view.php"
+			],
+			[
+				"propinsi",
+				"protected/modules/master/views/propinsi/index.php"
+			],
+			[
+				"table",
+				"themes/gebo/js/gebo_tables.js"
+			],
+			[
+				"app",
+				"protected/runtime/application.log"
+			],
+			[
+				"biaya",
+				"protected.server/modules/rencanaPD/views/rencanaTelaah/biayasppd.php"
+			],
+			[
+				"biayas",
+				"protected/modules/rencanaPD/views/rencanaTelaah/_biayasppd.php"
+			],
+			[
+				"rabc",
+				"protected/modules/uangMuka/controllers/RabController.php"
+			],
+			[
+				"rekaps",
+				"protected/models/RekapSurat.php"
+			],
+			[
+				"surat/",
+				"protected/modules/laporan/views/surat/index.php"
+			],
+			[
+				"surat",
+				"protected/modules/laporan/controllers/SuratController.php"
+			],
+			[
+				"gebo_ta",
+				"themes/gebo/js/gebo_tables.js"
+			],
+			[
+				"pega",
+				"protected/models/Pegawai.php"
+			],
+			[
+				"pindah",
+				"protected/modules/pengaturan/controllers/PindahSKPDController.php"
+			],
+			[
+				"pegawa",
+				"protected/modules/pengaturan/controllers/PegawaiController.php"
+			],
+			[
+				"websi",
+				"protected/modules/pengaturan/views/website/index.php"
+			],
+			[
+				"backup",
+				"protected/modules/pengaturan/views/backup/index.php"
+			],
+			[
+				"pandua",
+				"protected/modules/pengaturan/views/panduan/index.php"
+			],
+			[
+				"panduan",
+				"protected/modules/pengaturan/controllers/PanduanController.php"
+			],
+			[
+				"skpd/in",
+				"protected/modules/laporan/views/skpd/index.php"
+			],
+			[
+				"site",
+				"protected/controllers/SiteController.php"
+			],
+			[
+				"rab",
+				"protected/modules/uangMuka/controllers/RabController.php"
+			],
+			[
+				"kelas",
+				"protected/models/KelasKeberangkatan.php"
+			],
+			[
+				"ke",
+				"protected/models/KelasKeberangkatan.php"
+			],
+			[
+				"dashboard",
+				"protected/modules/dashboard/views/default/index.php"
+			],
+			[
+				"model/p",
+				"protected/models/Pegawai.php"
+			],
+			[
+				"penggun",
+				"protected/models/PenggunaAnggaran.php"
+			],
+			[
+				"tambahpenerimasppd",
+				"protected/modules/rencanaPD/views/rencanaTelaah/_tambahpenerimasppd.php"
+			],
+			[
+				"pengi",
+				"protected/modules/rencanaPD/views/pengikut/index.php"
+			],
+			[
+				"rencana",
+				"protected/modules/rencanaPD/controllers/PengikutController.php"
+			],
+			[
+				"gebo_da",
+				"themes/gebo/js/gebo_datepicker.js"
+			],
+			[
+				"main.php",
+				"themes/gebo/views/layouts/main.php"
+			],
+			[
+				"gebo_date",
+				"themes/gebo/js/gebo_datepicker.js"
+			],
+			[
+				"master/view",
+				"protected/modules/master/views/angkutan/_form.php"
+			],
+			[
+				"master/v",
+				"protected/modules/master/views/angkutan/index.php"
+			],
+			[
+				"master/",
+				"protected/modules/master/controllers/SkpdController.php"
+			],
+			[
+				"login",
+				"protected/models/LoginForm.php"
+			],
+			[
+				"rencanate",
+				"protected/modules/rencanaPD/controllers/RencanaTelaahController.php"
+			],
+			[
+				"rencanat",
+				"protected/modules/rencanaPD/views/rencanaTelaah/_form.php"
+			],
+			[
+				"rencanatelaa",
+				"protected/modules/rencanaPD/views/rencanaTelaah/create.php"
+			],
+			[
+				"model/us",
+				"protected/models/User.php"
+			],
+			[
+				"user",
+				"protected/models/User.php"
+			],
+			[
+				"model",
+				"protected/models/KelasKeberangkatan.php"
+			],
+			[
+				"pegaw",
+				"protected/modules/pengaturan/controllers/PegawaiController.php"
+			],
+			[
+				"gebo/view",
+				"themes/gebo/views/layouts/main.php"
+			],
+			[
+				"toko/",
+				"protected/modules/survei/views/toko/_view.php"
+			],
+			[
+				"publik/_vi",
+				"protected/modules/survei/views/publik/_view.php"
+			],
+			[
+				"survei/p",
+				"protected/modules/survei/controllers/PublikController.php"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true
+}

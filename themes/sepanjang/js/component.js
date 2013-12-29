@@ -128,4 +128,9 @@ $(document).ready(function(){
         show : false,
     });
 
+    // modal pusat bantuan
+    $('#helpCenter').modal({
+        show : false,
+    });
+
 });

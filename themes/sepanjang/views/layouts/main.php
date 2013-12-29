@@ -25,7 +25,7 @@
         <link href="<?php echo $baseUrl; ?>/lib/jtable/themes/metro/blue/jtable.min.css" rel="stylesheet" />
 
         <!-- custom -->
-        <link href="<?php echo $baseUrl; ?>/css/style.css" rel="stylesheet">
+        <link href="<?php echo $baseUrl; ?>/css/style.css" rel="stylesheet"> 
 
         <!--[if lt IE 9]>
           <script src="<?php echo $baseUrl; ?>/js/html5shiv.js"></script>
