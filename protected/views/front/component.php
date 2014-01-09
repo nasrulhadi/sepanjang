@@ -73,36 +73,36 @@ $(document).ready(function(){
     $('.form-input-voucher').change(function(){
         var value = $('.form-input-voucher').val();
         if(value != ""){
-            $('.form-input-provider').fadeIn(600).attr('style', 'display:block');
+            $('#form-input-provider').fadeIn(700).attr('style', 'display:block');
         }else{
-            $('.form-input-provider, .form-input-nominal').fadeOut(500);
+            $('#form-input-provider, #form-input-nominal').fadeOut(400);
             $('.form-input-nomor, .form-input-bank, #tombolProses').attr('disabled','disabled').removeAttr("checked");
-            $('.form-input-nomor, .form-input-terakhir').val('').html('');
+            $('.form-input-nomor').val('').html('');
         }
     });
 
 
     // select provider
     $('.form-input-provider').change(function(){
-        var value = $('.form-input-providers').val();
+        var value = $('.form-input-provider').val();
         if(value != ""){
-            $('.form-input-nominal').fadeIn(600).attr('style', 'display:block');
+            $('#form-input-nominal').fadeIn(700).attr('style', 'display:block');
         }else{
-            $('.form-input-nominal').fadeOut(500);
+            $('#form-input-nominal').fadeOut(400);
             $('.form-input-nomor, .form-input-bank, #tombolProses').attr('disabled','disabled').removeAttr("checked");
-            $('.form-input-nomor, .form-input-terakhir').val('').html('');
+            $('.form-input-nomor').val('').html('');
         }
     });
 
 
     // select nominal
     $('.form-input-nominal').change(function(){
-        var value = $('.form-input-nominals').val();
-        if(value != "empty"){
+        var value = $('.form-input-nominal').val();
+        if(value != ""){
             $('.form-input-nomor').removeAttr('disabled').focus();
         }else{
             $('.form-input-nomor, .form-input-bank, #tombolProses').attr('disabled','disabled').removeAttr("checked");
-            $('.form-input-nomor, .form-input-terakhir').val('').html('');
+            $('.form-input-nomor').val('').html('');
         }
     });
 
@@ -122,7 +122,6 @@ $(document).ready(function(){
     $('#nomor').keyup(function () {     
         this.value = this.value.replace(/[^0-9\.]/g,'');
         if(this.value.length >= 8){
-            $('.form-input-terakhir').html('Terakhir, ');
             $('.form-input-bank').removeAttr('disabled');
         }else{
             $('.form-input-bank, #tombolProses').attr('disabled','disabled').removeAttr("checked");

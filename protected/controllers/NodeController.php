@@ -22,7 +22,7 @@ class NodeController extends Controller
 
 		// convert hasil pencarian ke listdata
 		$listdata = CHtml::listData($model, 'opt_id', 'opt_name');
-        echo CHtml::tag('option', array('value' => ''), CHtml::encode("- Pilih Provider -"), true);
+        echo CHtml::tag('option', array('value' => ''), CHtml::encode("–"), true);
         
         // tampilkan hasil request
         foreach ($listdata as $value => $name) {
@@ -54,9 +54,19 @@ class NodeController extends Controller
 
 		
 		// tampilkan hasil request
-        echo CHtml::tag('option', array('value' => ''), CHtml::encode("- Pilih Nominal -"), true);
+        echo CHtml::tag('option', array('value' => ''), CHtml::encode("–"), true);
         foreach ($model as $result) {
-            echo CHtml::tag('option', array('value' => $result->dnm_id."_".($result->dnm_price+$labaJual)), CHtml::encode($result->dnm_nominal." ~> ".($result->dnm_price+$labaJual)), true);
+
+            // nominal ambil angka depan
+			if ($result->dnm_nominal <= 9999) {
+				$angkaDepan = substr($result->dnm_nominal, 0, 1);
+			}elseif ($result->dnm_nominal >= 10000 && $result->dnm_nominal <= 99999) {
+				$angkaDepan = substr($result->dnm_nominal, 0, 2);
+			}elseif ($result->dnm_nominal >= 100000 && $result->dnm_nominal <= 999999) {
+				$angkaDepan = substr($result->dnm_nominal, 0, 3);
+			}
+
+            echo CHtml::tag('option', array('value' => $result->dnm_id."_".($result->dnm_price+$labaJual)), CHtml::encode($angkaDepan." » ".($result->dnm_price+$labaJual)), true);
         }
 
         // generate parameter untuk key random

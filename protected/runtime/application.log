@@ -313,3 +313,1688 @@ Stack trace:
 REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
 HTTP_REFERER=http://localhost/sepanjang/
 ---
+2014/01/02 23:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:00:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:01:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:01:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:01:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:04:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:04:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:04:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:06:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:06:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:08:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:09:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:09:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:13:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:13:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:13:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:13:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:13:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:17:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:17:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:46:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:46:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:48:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:48:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:48:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:49:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/02 23:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:03:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:04:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:22:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:23:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:24:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:56:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 00:56:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:12:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:13:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:16:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:16:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:26:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:28:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:28:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:29:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:29:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 01:31:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:39:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:39:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:39:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:39:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:40:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:41:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:41:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:43:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:43:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 18:43:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:06:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:06:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:07:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:08:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:09:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:14:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:14:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/03 19:26:12 [error] [php] Undefined variable: result (/var/www/sepanjang/protected/controllers/NodeController.php:56)
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CController.php(286): NodeController->runAction()
+#1 /var/www/yii.1.1.14/framework/web/CController.php(265): NodeController->runActionWithFilters()
+#2 /var/www/yii.1.1.14/framework/web/CWebApplication.php(282): NodeController->run()
+#3 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#4 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#5 /var/www/sepanjang/index.php(15): CWebApplication->run()
+REQUEST_URI=/sepanjang/node/getnominal
+in /var/www/sepanjang/protected/controllers/NodeController.php (56)
+in /var/www/sepanjang/index.php (15)
+2014/01/05 01:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:34:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:36:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:37:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:39:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:39:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:40:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:52:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:53:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:53:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:53:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:54:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:55:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:55:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:57:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:58:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:59:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 01:59:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:02:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:02:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:05:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:05:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:09:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:11:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:27:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:28:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:28:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/jquery-1.10.2.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/jquery-1.10.2.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---
+2014/01/05 02:30:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/sepanjang/js/dist/jquery-migrate.min.map".' in /var/www/yii.1.1.14/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/yii.1.1.14/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/sepanjan...')
+#1 /var/www/yii.1.1.14/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/sepanjang/index.php(15): CApplication->run()
+#3 {main}
+REQUEST_URI=/sepanjang/themes/sepanjang/js/dist/jquery-migrate.min.map
+HTTP_REFERER=http://localhost/sepanjang/
+---

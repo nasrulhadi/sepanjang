@@ -18,6 +18,7 @@
         <link rel="shortcut icon" href="<?php echo $baseUrl; ?>/img/favicon.png">
 
         <!-- css -->
+        <link rel='stylesheet' id='google_fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700;ver=1.0' type='text/css' media='all' />
         <link href="<?php echo $baseUrl; ?>/css/bootstrap.min.css" rel="stylesheet">
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal-bs3patch.css" rel="stylesheet" />
         <link href="<?php echo $baseUrl; ?>/css/bootstrap-modal.css" rel="stylesheet" />

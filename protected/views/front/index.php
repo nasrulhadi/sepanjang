@@ -48,6 +48,162 @@
 <!-- content -->
 <section class="main-content">
 	<div class="container clearfix">
+
+		<div class="form-box" style="position: absolute;">
+			<div class="form-order form-widget masonry-brick" style="position: absolute; top: 0px; left: 0px;">
+	            <p>Order</p>
+	            <a href="#">Terbaru</a>
+	            <div class="form-content">
+	                <div class="form-content-tab">
+	                    <p id="form-tagline">- Tentukan, transfer & terima pulsanya -</p>
+	                    <p id="form-tagline" class="hidden">- Karena berbagi bisa memperkaya hati -</p>
+	                    <img src="http://farm6.staticflickr.com/5324/9852795376_75acd0c8b8_o.jpg" class="form-img-donasi hidden">
+
+	                    <!-- step1 -->
+	                    <?php 
+						$form=$this->beginWidget('CActiveForm', array(
+							'id'=>'step1-form',
+							'enableAjaxValidation'=>false,
+							'htmlOptions'=>array('class'=>'', 'role' => 'form')
+						)); 
+						?>
+							<p class="row_full">
+	                            <label for="kategori">Voucher:</label>
+	                            <!-- kategori -->
+	                            <?php
+								$criteria=new CDbCriteria;
+							   	$criteria->condition = 'ktg_status = :status';
+							   	$criteria->params = array(':status' => 1);
+							   	$criteria->order = 'ktg_id';
+								$kategori = CHtml::listData(Kategori::model()->findAll($criteria),'ktg_id','ktg_nama');
+								echo CHtml::dropDownList('kategori','',$kategori,
+									array(
+										'empty' => '–',
+										'class' => 'form-input-voucher',
+										'ajax' => array(
+											'type'=>'POST',
+											'data'=>array('ktgId' => 'js:this.value'),
+											'url'=>CController::createUrl('/node/getprovider'),
+											'update'=>'#provider', 
+											'success'=>'function(data){
+												$("#provider").html(data);
+											}'
+										),
+								  ));
+					        	?>
+
+					        </p>
+					        <p class="row_half" id="form-input-provider" style="display:none">
+					        	<!-- provider -->
+								<?php
+								echo CHtml::dropDownList('provider','',array("–"),
+									array(
+										'class' => 'form-input-provider',
+										'ajax' => array(
+											'type'=>'POST',
+											'data'=>array('pvdId' => 'js:this.value'),
+											'url'=>CController::createUrl('/node/getnominal'),
+											'update'=>'#nominal', 
+											'success'=>'function(data){
+												var splitNominal = data.split("%");
+												$("#nominal").html(splitNominal[0]);
+												$("#keyhash").val(splitNominal[1]);
+											}'
+										),
+								  ));
+								?>
+
+							</p>
+					        <p class="row_half" id="form-input-nominal" style="display:none">
+								<!-- nominal -->
+								<?php
+								echo CHtml::dropDownList('nominal','',array("–"), 
+									array(
+										'class' => 'form-input-nominal',
+										)
+									);
+								?>
+
+	                        </p>
+	                        <p class="row_full">
+	                        	<!-- nomor -->
+	                            <label for="nomor">Nomor:</label>
+	                            <input type="text" name="nomor" id="nomor" class="form-input-nomor" placeholder="0812345678xx" maxlength="20" disabled>
+	                        </p>
+	                        
+	                        <p class="row_full">
+	                        	<!-- bank transfer -->
+	                            <label for="brand">Bank Transfer:</label>
+	                            <label class="radio-inline" style="display: inline-block;">
+									<input type="radio" id="bank" class="form-input-bank" name="bank" value="bca" disabled> <strong class="form-bank">BCA</strong>
+								</label>
+								<label class="radio-inline" style="display: inline-block;">
+									<input type="radio" id="bank" class="form-input-bank" name="bank" value="mandiri" disabled> <strong class="form-bank">Mandiri</strong>
+								</label>
+	                        </p>
+
+	                        <p class="submit_field row_full">
+	                            <input type="submit" id="tombolProses" data-loading-text="Tunggu..." value="Selanjutnya" disabled >
+	                            <?php
+								if(Yii::app()->session['keySalt'] == ""){
+									Yii::app()->session['keySalt'] = Options::model()->getSession();
+								} 
+								echo CHtml::hiddenField('keystore', Yii::app()->session['keySalt']); 
+								echo CHtml::hiddenField('keyhash', "0"); 
+								?>
+	                        </p>
+	                        <div style="clear:both;"></div>
+	                    <?php 
+						$this->endWidget();
+						?>
+
+
+	                    <!-- step2 -->
+						<?php 
+						$form=$this->beginWidget('CActiveForm', array(
+							'id'=>'step2-form',
+							'enableAjaxValidation'=>false,
+							'htmlOptions'=>array('class'=>'', 'role' => 'form')
+						)); 
+						?>
+							<p class="tac" style="color: #242424;">Seluruh hasil Donasi akan di serahkan kepada <a href="http://www.sschildsurabaya.com" target="_blank">Surabaya Save Child</a> setiap akhir bulan.</p>
+                            <div class="clearfix"></div>
+                            <div class="center-block mt-10 mb-20">
+	                            <div class="form-box-donasi well well-sm tac inline nmb kanan-7">
+	                            	<label class="nmb">
+										<strong class="form-donasi rupiah block mb-10">Rp. 100,-</strong>
+										<input type="radio" id="donasi" class="form-input-donasi" name="donasi" value="100"> 
+									</label>
+	                            </div>
+	                            <div class="form-box-donasi well well-sm tac inline nmb kanan-7">
+	                            	<label class="nmb">
+										<strong class="form-donasi rupiah block mb-10">Rp. 1000,-</strong>
+										<input type="radio" id="donasi" class="form-input-donasi" name="donasi" value="1000">
+									</label>
+	                            </div>
+	                            <div class="form-box-donasi well well-sm tac inline nmb">
+	                            	<label class="nmb">
+										<strong class="form-donasi rupiah block mb-10">Rp. 2500,-</strong>
+										<input type="radio" id="donasi" class="form-input-donasi" name="donasi" value="2500">
+									</label>
+	                            </div>
+	                        </div>                                                    
+	                        <div class="clearfix"></div>
+
+	                        <p class="submit_field row_full">
+	                            <input type="submit" id="tombolProses2" data-loading-text="Tunggu..." value="Proses" disabled >
+	                        </p>
+	                        <div class="clearfix"></div>
+	                    <?php 
+						$this->endWidget();
+						?>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+
+
+		<!-- 
 		<div class="form-box">
 			<?php 
 			$form=$this->beginWidget('CActiveForm', array(
@@ -206,6 +362,8 @@
 				</fieldset>
 			<?php $this->endWidget(); ?>
 		</div>
+		-->
+
 
 		<div id="batalkanpesanan" class="modal fade" tabindex="-1" data-width="500" style="display: none;">
 			<div class="modal-body">
